@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Có Những Bức Thư Từ 10A1 Nè - Tri Ân 20/11</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-bg-outer: #f2cbd4;
+      --pink-bg-mid: #fbe9ed;
+      --pink-bg-center: #fffafa;
+      --burgundy: #9e2a47;
+      --burgundy-dark: #751b32;
+      --rose-btn: #f46b8a;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      background: radial-gradient(ellipse at center, var(--pink-bg-center) 0%, var(--pink-bg-mid) 52%, var(--pink-bg-outer) 100%);
+      min-height: 100vh;
+      color: #4a2c35;
+    }
+
+    .font-calligraphy {
+      font-family: 'Great Vibes', 'Dancing Script', cursive;
+    }
+
+    .font-script {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .font-serif-vn {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Background tựa như video: vignette hồng pastel, đốm sáng, cành lá & hoa hai bên */
+    .video-like-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(255, 253, 253, 0.96) 0%, rgba(253, 234, 238, 0.88) 46%, rgba(242, 198, 209, 0.85) 82%, rgba(232, 178, 192, 0.92) 100%);
+    }
+
+    .speckle-layer {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(186, 95, 118, 0.22) 1.2px, transparent 1.2px),
+        radial-gradient(rgba(218, 142, 160, 0.18) 1.5px, transparent 1.5px);
+      background-size: 48px 48px, 72px 72px;
+      background-position: 0 0, 24px 24px;
+      opacity: 0.7;
+    }
+
+    .sway-left {
+      transform-origin: bottom left;
+      animation: gentleSwayLeft 5.5s ease-in-out infinite alternate;
+    }
+
+    .sway-right {
+      transform-origin: bottom right;
+      animation: gentleSwayRight 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes gentleSwayLeft {
+      0% { transform: rotate(-2deg) scale(1); }
+      100% { transform: rotate(3.5deg) scale(1.02); }
+    }
+
+    @keyframes gentleSwayRight {
+      0% { transform: rotate(2deg) scale(1); }
+      100% { transform: rotate(-3.5deg) scale(1.02); }
+    }
+
+    /* ================= STAGE 1: HIỆU ỨNG XE TẢI CHẠY QUA (Từ 20-11-main.zip) ================= */
+    .truck-stage-wrapper {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .truck-stage-wrapper.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .truck-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+
+    .truck-Runner {
+      position: relative;
+      height: 320px;
+      width: 400px;
+      animation: truckDriveAcross 5.4s cubic-bezier(0.32, 0.04, 0.25, 1) forwards;
+    }
+
+    @keyframes truckDriveAcross {
+      0% { transform: translateX(-115vw) scale(0.95); }
+      38% { transform: translateX(-10px) scale(1); }
+      64% { transform: translateX(25px) scale(1); }
+      100% { transform: translateX(115vw) scale(0.95); }
+    }
+
+    .ts {
+      position: relative;
+      width: 400px;
+      left: 15px;
+      top: 75px;
+      animation: truckBounce 0.45s infinite alternate ease-in-out;
+    }
+
+    @keyframes truckBounce {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(7px); }
+    }
+
+    .box {
+      height: 150px;
+      width: 250px;
+      background: linear-gradient(145deg, #ffc2d1 0%, #ffacc2 100%);
+      position: relative;
+      border-radius: 10px 10px 0 0;
+      border: 2px solid #e27894;
+      box-shadow: 0 8px 20px rgba(184, 59, 94, 0.16);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .front {
+      position: absolute;
+      height: 20px;
+      width: 80px;
+      background-color: #ffb3c6;
+      right: 66px;
+      top: 30px;
+      border-radius: 5px 25px 0 0;
+      border-top: 2px solid #e27894;
+    }
+
+    .front1 {
+      position: absolute;
+      height: 60px;
+      width: 95px;
+      background-color: #ffb3c6;
+      right: -15px;
+      top: 14px;
+      border-radius: 2px 35px 0 0;
+      border-right: 2px solid #e27894;
+    }
+
+    .front2 {
+      position: absolute;
+      height: 60px;
+      width: 120px;
+      background-color: #ffacc2;
+      right: -40px;
+      top: 60px;
+      border-radius: 2px 12px 0 0;
+      border-right: 2px solid #e27894;
+    }
+
+    .hood {
+      width: 382px;
+      background-color: #2b181e;
+      height: 13px;
+      position: absolute;
+      left: -252px;
+      top: 120px;
+      border-radius: 4px 15px 4px 4px;
+    }
+
+    .window {
+      position: absolute;
+      background: linear-gradient(135deg, #6d3b6e 0%, #9b5d9c 100%);
+      height: 36px;
+      width: 65px;
+      left: 13px;
+      top: 22px;
+      border-radius: 5px 30px 4px 4px;
+      border: 2px solid #2b181e;
+    }
+
+    .tyre1, .tyre2, .tyre3, .tyre4 {
+      position: absolute;
+      height: 55px;
+      width: 55px;
+      background-color: #1c1215;
+      border-radius: 50%;
+      border: 3px solid #d44f65;
+      bottom: -40px;
+      animation: wheelSpin 0.8s infinite linear;
+      z-index: 5;
+    }
+
+    @keyframes wheelSpin {
+      100% { transform: rotate(360deg); }
+    }
+
+    .tyre1 { left: 5px; }
+    .tyre2 { left: 70px; }
+    .tyre3 { left: 180px; }
+    .tyre4 { left: 310px; }
+
+    .tyre1::after, .tyre2::after, .tyre3::after, .tyre4::after {
+      content: "";
+      position: absolute;
+      background-color: #6b6466;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      left: 6px;
+      top: 6px;
+    }
+
+    .r1, .r2, .r3, .r4 {
+      height: 21px;
+      width: 3px;
+      background-color: #1c1215;
+      z-index: 2;
+      position: absolute;
+    }
+    .r1 { transform: rotate(90deg); left: 36px; top: 9px; }
+    .r2 { transform: rotate(180deg); left: 36px; top: 20px; }
+    .r3 { transform: rotate(270deg); left: 26px; top: 27px; }
+    .r4 { transform: rotate(360deg); left: 15px; top: 20px; }
+
+    .light {
+      height: 20px;
+      width: 125px;
+      background-color: #584949;
+      position: absolute;
+      top: 90px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .trapezoid {
+      position: absolute;
+      width: 16px;
+      height: 95px;
+      background: linear-gradient(to bottom, rgba(255, 224, 130, 0.85), rgba(255, 92, 119, 0.35));
+      transform: perspective(10px) rotateX(7deg);
+      rotate: 270deg;
+      margin: 50px;
+      left: 95px;
+      top: -2px;
+      border-radius: 4px;
+    }
+
+    .pipe {
+      position: absolute;
+      height: 60px;
+      width: 8px;
+      background-color: #2b181e;
+      top: -50px;
+      z-index: -1;
+      border-radius: 0 50px 0 0;
+    }
+
+    .pipe2 {
+      position: absolute;
+      height: 20px;
+      width: 8px;
+      background-color: #2b181e;
+      top: -56px;
+      z-index: -1;
+      border-radius: 50px 0 0 50px;
+      rotate: 90deg;
+      left: -8px;
+    }
+
+    /* Smoke puffs replacing external gif for 100% reliability */
+    .smoke-puff {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(248,200,212,0.55) 60%, transparent 100%);
+      animation: puffFloat 1.4s ease-out infinite;
+      pointer-events: none;
+    }
+    .sp1 { width: 28px; height: 28px; left: -35px; top: -68px; animation-delay: 0s; }
+    .sp2 { width: 38px; height: 38px; left: -65px; top: -82px; animation-delay: 0.25s; }
+    .sp3 { width: 46px; height: 46px; left: -102px; top: -92px; animation-delay: 0.5s; }
+    .sp4 { width: 34px; height: 34px; left: -138px; top: -78px; animation-delay: 0.75s; }
+    .sp5 { width: 52px; height: 52px; left: -175px; top: -96px; animation-delay: 1s; }
+
+    @keyframes puffFloat {
+      0% { transform: translate(0, 0) scale(0.5); opacity: 0.9; }
+      100% { transform: translate(-45px, -18px) scale(1.35); opacity: 0; }
+    }
+
+    /* ================= STAGE 2: ANIMATION VIDEO (HOA XOAY & CÓ NHỮNG BỨC THƯ TỪ 10A1 NÈ) ================= */
+    .video-intro-stage {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      padding: 1.5rem;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .video-intro-stage.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .petal-orbit-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .ripple-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px solid rgba(216, 130, 148, 0.35);
+      width: 110px;
+      height: 110px;
+      animation: rippleOut 2.8s ease-out infinite;
+    }
+    .ripple-ring.delay-1 {
+      animation-delay: 1.1s;
+    }
+
+    @keyframes rippleOut {
+      0% { transform: scale(0.5); opacity: 0.9; }
+      100% { transform: scale(1.75); opacity: 0; }
+    }
+
+    .swirl-petal {
+      position: absolute;
+      width: 34px;
+      height: 52px;
+      border-radius: 50% 50% 45% 45%;
+      background: linear-gradient(180deg, #fff9fa 0%, #f6c8d1 65%, #d98296 100%);
+      box-shadow: 0 2px 6px rgba(158, 42, 71, 0.15);
+      transform-origin: center 42px;
+      opacity: 0;
+    }
+
+    .video-intro-stage.active-anim .swirl-petal {
+      animation: petalAssemble 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes petalAssemble {
+      0% {
+        opacity: 0;
+        transform: rotate(var(--rot)) translateY(-130px) rotate(-140deg) scale(0.6);
+      }
+      55% {
+        opacity: 0.95;
+      }
+      100% {
+        opacity: 1;
+        transform: rotate(var(--rot)) translateY(-24px) rotate(0deg) scale(1);
+      }
+    }
+
+    .flower-pistil {
+      position: relative;
+      z-index: 10;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #4a1e27 0%, #7d3242 60%, #c9697e 100%);
+      box-shadow: 0 0 0 4px rgba(255, 240, 243, 0.7);
+      transform: scale(0);
+    }
+
+    .video-intro-stage.active-anim .flower-pistil {
+      animation: pistilPop 0.6s ease 1.1s forwards;
+    }
+
+    @keyframes pistilPop {
+      0% { transform: scale(0); }
+      70% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .title-reveal-box {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    .video-intro-stage.active-anim .title-reveal-box {
+      animation: fadeSlideUp 1s ease 1.35s forwards;
+    }
+
+    .subtitle-reveal-box {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+
+    .video-intro-stage.active-anim .subtitle-reveal-box {
+      animation: fadeSlideUp 0.9s ease 2.1s forwards;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ================= STAGE 3: PHONG BÌ "THƯ ĐÂY NÈ" & NÚT "MỞ THƯ" ================= */
+    .envelope-stage {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      padding: 1.5rem;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .envelope-stage.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .video-envelope-wrap {
+      position: relative;
+      width: 340px;
+      height: 225px;
+      margin: 1.25rem auto 1.75rem;
+      cursor: pointer;
+      perspective: 900px;
+      transition: transform 0.35s ease;
+    }
+
+    .video-envelope-wrap:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
+
+    /* Envelope base matching 00:11 - 00:12 of video */
+    .video-env-body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #f99bb5 0%, #f582a2 100%);
+      border-radius: 10px;
+      box-shadow: 0 18px 36px rgba(168, 56, 88, 0.25), 0 4px 10px rgba(168, 56, 88, 0.15);
+      overflow: hidden;
+      border: 2px solid #fbaec3;
+    }
+
+    /* Rising inner letter preview when opening */
+    .video-env-letter-preview {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 12px;
+      height: 185px;
+      background: #fffafa;
+      border-radius: 8px;
+      border: 1.5px solid #f5c2cf;
+      padding: 16px;
+      text-align: center;
+      z-index: 2;
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .video-envelope-wrap.opening .video-env-letter-preview,
+    .video-envelope-wrap:hover .video-env-letter-preview {
+      transform: translateY(-32px);
+    }
+
+    /* Left, right, bottom folds */
+    .video-env-pocket {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .video-env-pocket::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #f78ca9 0%, #f37698 100%);
+      clip-path: polygon(0 0, 52% 55%, 0 100%);
+    }
+
+    .video-env-pocket::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(225deg, #f78ca9 0%, #f37698 100%);
+      clip-path: polygon(100% 0, 48% 55%, 100% 100%);
+    }
+
+    .video-env-bottom-fold {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      background: linear-gradient(0deg, #fa9eb7 0%, #f686a5 100%);
+      clip-path: polygon(0 100%, 50% 48%, 100% 100%);
+      border-bottom: 4px solid #ffffff;
+    }
+
+    /* Top Flap */
+    .video-env-flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 135px;
+      z-index: 5;
+      background: linear-gradient(180deg, #fbaac0 0%, #f581a0 100%);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform-origin: top center;
+      transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: drop-shadow(0 5px 6px rgba(138, 35, 64, 0.18));
+    }
+
+    .video-envelope-wrap.opening .video-env-flap {
+      transform: rotateX(180deg);
+      z-index: 1;
+    }
+
+    /* Flower Wax Seal in center of envelope */
+    .wax-seal {
+      position: absolute;
+      left: 50%;
+      top: 56%;
+      transform: translate(-50%, -50%);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #f25c7e 0%, #d9385e 85%, #b82547 100%);
+      border: 2.5px dashed rgba(255, 225, 232, 0.85);
+      box-shadow: 0 4px 12px rgba(145, 28, 58, 0.32);
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.45s ease, opacity 0.45s ease;
+    }
+
+    .video-envelope-wrap.opening .wax-seal {
+      transform: translate(-50%, -50%) scale(1.25) rotate(25deg);
+      opacity: 0;
+    }
+
+    /* Nút MỞ THƯ giống hệt video 00:12 */
+    .open-letter-btn {
+      position: relative;
+      background: linear-gradient(180deg, #f77897 0%, #ec5378 100%);
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 0.75rem 2.75rem;
+      border-radius: 9999px;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 8px 22px rgba(236, 83, 120, 0.38), inset 0 1px 2px rgba(255,255,255,0.6);
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      animation: btnPulse 1.8s infinite;
+    }
+
+    .open-letter-btn:hover {
+      transform: scale(1.06) translateY(-2px);
+      background: linear-gradient(180deg, #ff85a3 0%, #f25c80 100%);
+      box-shadow: 0 12px 26px rgba(236, 83, 120, 0.5);
+    }
+
+    @keyframes btnPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(244, 107, 138, 0.55), 0 8px 22px rgba(236, 83, 120, 0.38); }
+      50% { box-shadow: 0 0 0 12px rgba(244, 107, 138, 0), 0 8px 22px rgba(236, 83, 120, 0.38); }
+    }
+
+    /* ================= STAGE 4: TRANG 41 BỨC THƯ LỚP 10A1 ================= */
+    .gallery-stage {
+      position: relative;
+      z-index: 15;
+      min-height: 100vh;
+      padding-top: 4.5rem;
+      padding-bottom: 4rem;
+      transition: opacity 0.6s ease;
+    }
+
+    .gallery-stage.hidden-stage {
+      display: none;
+    }
+
+    /* Tỷ lệ chuẩn giấy A4 Dọc (210:297) và A4 Ngang (297:210) */
+    .aspect-a4-portrait {
+      aspect-ratio: 210 / 297;
+    }
+
+    .aspect-a4-landscape {
+      aspect-ratio: 297 / 210;
+    }
+
+    .letter-card {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+    }
+
+    .letter-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(158, 42, 71, 0.18);
+    }
+
+    /* Confetti sparkles */
+    .sparkle-confetti {
+      position: fixed;
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 35;
+      animation: confettiFall 2.2s ease-out forwards;
+    }
+
+    @keyframes confettiFall {
+      0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+      100% { transform: translate(var(--dx), var(--dy)) rotate(340deg) scale(0.3); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND TỰA NHƯ VIDEO (Dùng chung xuyên suốt các cảnh & trang 41 bức thư) -->
+  <div class="video-like-bg" aria-hidden="true">
+    <div class="speckle-layer"></div>
+
+    <!-- Cành lá & Hoa bên trái giống video -->
+    <svg class="sway-left absolute left-0 top-0 h-full w-40 md:w-64 opacity-85" viewBox="0 0 260 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nhánh lá xanh olive trên -->
+      <path d="M-10 40 Q70 90 125 170" stroke="#7c8c6e" stroke-width="2" fill="none"/>
+      <path d="M45 85 C75 65 95 95 60 110 C35 100 35 90 45 85 Z" fill="#8ea37e" opacity="0.8"/>
+      <path d="M85 125 C115 110 130 140 95 150 C75 142 75 132 85 125 Z" fill="#9cb08c" opacity="0.75"/>
+      <!-- Bông hoa nhỏ bên trái -->
+      <g transform="translate(62, 515)">
+        <circle cx="0" cy="-14" r="9" fill="#fae3e7"/>
+        <circle cx="13" cy="-5" r="9" fill="#f7d4da"/>
+        <circle cx="8" cy="11" r="9" fill="#fae3e7"/>
+        <circle cx="-8" cy="11" r="9" fill="#f7d4da"/>
+        <circle cx="-13" cy="-5" r="9" fill="#fae3e7"/>
+        <circle cx="0" cy="0" r="6" fill="#6e2b3a"/>
+      </g>
+      <!-- Cỏ lau hồng (pink reeds) góc dưới trái giống video -->
+      <path d="M10 810 Q45 650 78 550" stroke="#c77d8f" stroke-width="2" fill="none"/>
+      <ellipse cx="78" cy="548" rx="9" ry="26" transform="rotate(14 78 548)" fill="#e391a6" opacity="0.85"/>
+      <ellipse cx="64" cy="590" rx="8" ry="22" transform="rotate(12 64 590)" fill="#ea9eb2" opacity="0.8"/>
+      <path d="M35 810 Q75 670 118 575" stroke="#c77d8f" stroke-width="1.8" fill="none"/>
+      <ellipse cx="118" cy="575" rx="10" ry="28" transform="rotate(18 118 575)" fill="#de839b" opacity="0.85"/>
+      <ellipse cx="102" cy="618" rx="8" ry="22" transform="rotate(18 102 618)" fill="#ea9eb2" opacity="0.75"/>
+    </svg>
+
+    <!-- Cành lá & Hoa bên phải giống video -->
+    <svg class="sway-right absolute right-0 top-0 h-full w-40 md:w-64 opacity-85" viewBox="0 0 260 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nhánh lá mảnh góc phải trên -->
+      <path d="M270 25 Q185 95 140 190" stroke="#7c8c6e" stroke-width="2" fill="none"/>
+      <path d="M205 85 C175 65 160 95 190 112 C210 102 212 92 205 85 Z" fill="#8ea37e" opacity="0.85"/>
+      <path d="M168 138 C140 125 130 152 160 165 C175 155 175 145 168 138 Z" fill="#a3b893" opacity="0.8"/>
+      <!-- Bông hoa giữa phải giống video -->
+      <g transform="translate(185, 390)">
+        <circle cx="0" cy="-18" r="11" fill="#fff5f7"/>
+        <circle cx="16" cy="-6" r="11" fill="#f9dce2"/>
+        <circle cx="10" cy="14" r="11" fill="#fff5f7"/>
+        <circle cx="-10" cy="14" r="11" fill="#f9dce2"/>
+        <circle cx="-16" cy="-6" r="11" fill="#fff5f7"/>
+        <circle cx="0" cy="0" r="7" fill="#5e2230"/>
+      </g>
+      <!-- Cỏ lau hồng góc dưới phải -->
+      <path d="M250 810 Q215 650 182 545" stroke="#c77d8f" stroke-width="2" fill="none"/>
+      <ellipse cx="182" cy="545" rx="10" ry="27" transform="rotate(-14 182 545)" fill="#e391a6" opacity="0.85"/>
+      <ellipse cx="196" cy="590" rx="8" ry="22" transform="rotate(-12 196 590)" fill="#ea9eb2" opacity="0.8"/>
+      <path d="M220 810 Q185 685 148 595" stroke="#c77d8f" stroke-width="1.8" fill="none"/>
+      <ellipse cx="148" cy="595" rx="9" ry="25" transform="rotate(-18 148 595)" fill="#de839b" opacity="0.85"/>
+    </svg>
+  </div>
+
+  <!-- THANH ĐIỀU KHIỂN CẢNH & NHẠC NỀN (Luôn nổi ở góc trên để dễ kiểm thử và chuyển cảnh) -->
+  <header class="fixed top-3 left-0 right-0 z-40 px-3 flex justify-center pointer-events-none">
+    <nav class="pointer-events-auto bg-white/85 backdrop-blur-md border border-pink-200/90 shadow-lg rounded-full px-3 py-1.5 flex flex-wrap items-center gap-1.5 text-xs md:text-sm">
+      <span class="font-bold text-rose-800 px-2 py-0.5 bg-rose-100 rounded-full hidden sm:inline-block">🌸 10A1 • 20/11</span>
+      <button id="navStage1" onclick="goToStage(1)" class="px-2.5 py-1 rounded-full font-medium transition bg-rose-600 text-white">
+        1. Xe tải chạy
+      </button>
+      <button id="navStage2" onclick="goToStage(2)" class="px-2.5 py-1 rounded-full font-medium transition text-rose-800 hover:bg-rose-100">
+        2. Có những bức thư từ 10A1 nè
+      </button>
+      <button id="navStage3" onclick="goToStage(3)" class="px-2.5 py-1 rounded-full font-medium transition text-rose-800 hover:bg-rose-100">
+        3. Thư đây nè (Mở thư)
+      </button>
+      <button id="navStage4" onclick="goToStage(4)" class="px-2.5 py-1 rounded-full font-medium transition text-rose-800 hover:bg-rose-100">
+        4. Trang 41 Bức Thư (image/)
+      </button>
+      <div class="h-4 w-px bg-pink-200 mx-0.5"></div>
+      <button id="btnToggleMusic" onclick="toggleBackgroundMusic()" class="px-2.5 py-1 rounded-full font-medium bg-pink-50 text-rose-700 hover:bg-pink-100 border border-pink-200 transition flex items-center gap-1" title="Bật/Tắt giai điệu 20/11">
+        <span id="musicIcon">🔇</span> <span class="hidden md:inline">Nhạc</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================= STAGE 1: XE TẢI CHẠY QUA (Từ 20-11-main.zip) ================= -->
+  <section id="stage1Truck" class="truck-stage-wrapper">
+    <div class="text-center mb-2 px-4">
+      <span class="inline-block px-4 py-1 rounded-full bg-white/80 border border-pink-200 text-rose-700 text-xs md:text-sm font-medium shadow-sm">
+        🚚 Chuyến xe yêu thương của tập thể lớp 10A1 đang giao 41 bức thư...
+      </span>
+    </div>
+
+    <div class="truck-container">
+      <div id="truckRunner" class="truck-Runner">
+        <div class="ts">
+          <div class="box">
+            <div class="text-rose-800 font-bold text-sm tracking-wider uppercase bg-white/85 px-3 py-1 rounded-full shadow-sm border border-pink-300">
+              💌 10A1 Express
+            </div>
+            <div class="font-script text-xl text-rose-700 mt-1 font-bold">
+              41 Bức Thư 20/11
+            </div>
+          </div>
+          <div class="front">
+            <div class="light"></div>
+            <div class="trapezoid"></div>
+            <div class="pipe"></div>
+            <div class="pipe2"></div>
+            <!-- Khói xe mượt mà -->
+            <div class="smoke-puff sp1"></div>
+            <div class="smoke-puff sp2"></div>
+            <div class="smoke-puff sp3"></div>
+            <div class="smoke-puff sp4"></div>
+            <div class="smoke-puff sp5"></div>
+            <div class="front1"></div>
+            <div class="front2"></div>
+            <div class="window"></div>
+            <div class="hood"></div>
+          </div>
+          <div class="tyre1"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre2"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre3"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre4"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 flex items-center gap-3">
+      <button onclick="goToStage(2)" class="px-5 py-2 rounded-full bg-white/90 hover:bg-white text-rose-700 font-semibold text-sm shadow-md border border-pink-200 transition">
+        Tiếp tục tới Animation Video ➔
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 2: ANIMATION CỦA VIDEO ("Có những bức thư từ 10a1 nè") ================= -->
+  <section id="stage2VideoIntro" class="video-intro-stage hidden-stage">
+    <!-- Bông hoa 8 cánh xoay tụ lại giống 00:01 - 00:04 trong video -->
+    <div class="petal-orbit-container">
+      <div class="ripple-ring"></div>
+      <div class="ripple-ring delay-1"></div>
+      <div class="swirl-petal" style="--rot: 0deg;"></div>
+      <div class="swirl-petal" style="--rot: 45deg;"></div>
+      <div class="swirl-petal" style="--rot: 90deg;"></div>
+      <div class="swirl-petal" style="--rot: 135deg;"></div>
+      <div class="swirl-petal" style="--rot: 180deg;"></div>
+      <div class="swirl-petal" style="--rot: 225deg;"></div>
+      <div class="swirl-petal" style="--rot: 270deg;"></div>
+      <div class="swirl-petal" style="--rot: 315deg;"></div>
+      <div class="flower-pistil"></div>
+    </div>
+
+    <!-- Dòng chữ thay thế theo đúng yêu cầu: "Có những bức thư từ 10a1 nè" -->
+    <div class="title-reveal-box text-center max-w-2xl px-4">
+      <h1 class="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#9e2a47] leading-tight drop-shadow-sm">
+        Có những bức thư từ 10a1 nè
+      </h1>
+
+      <!-- Đường kẻ hoa văn thoi giống 00:05 trong video -->
+      <div class="flex items-center justify-center gap-2 my-3 text-[#d98296]">
+        <span class="h-px w-16 sm:w-24 bg-[#d98296]"></span>
+        <span class="text-xs">◆</span>
+        <span class="text-base">❖</span>
+        <span class="text-xs">◆</span>
+        <span class="h-px w-16 sm:w-24 bg-[#d98296]"></span>
+      </div>
+    </div>
+
+    <div class="subtitle-reveal-box text-center">
+      <p class="font-serif-vn text-2xl sm:text-3xl font-bold text-[#6e3b47] tracking-wide">
+        Gửi đến thầy cô
+      </p>
+      <p class="font-serif-vn italic text-base sm:text-lg text-[#b56579] mt-1.5">
+        nhân ngày Nhà giáo Việt Nam 20/11
+      </p>
+
+      <div class="mt-8">
+        <button onclick="goToStage(3)" class="px-5 py-2 rounded-full bg-white/85 hover:bg-white text-rose-700 font-semibold text-xs sm:text-sm shadow border border-pink-200 transition">
+          Chuyển sang phong bì "Thư đây nè" ➔
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 3: PHONG BÌ "THƯ ĐÂY NÈ" & NÚT "MỞ THƯ" (Giống 00:10 - 00:12 video) ================= -->
+  <section id="stage3Envelope" class="envelope-stage hidden-stage">
+    <div class="text-center mb-1 animate-fade-in">
+      <h2 class="font-calligraphy text-5xl sm:text-6xl text-[#9e2a47] drop-shadow-sm">
+        Thư đây nè
+      </h2>
+      <p class="text-xs sm:text-sm text-[#9e5869] mt-1">
+        41 bức thư chân thành từ tập thể lớp 10A1 đang chờ thầy cô mở ra
+      </p>
+    </div>
+
+    <!-- Phong bì màu hồng có con dấu hoa ở giữa giống video -->
+    <div id="interactiveEnvelope" class="video-envelope-wrap" onclick="triggerOpenLettersPage()">
+      <div class="video-env-flap"></div>
+      <div class="video-env-body">
+        <div class="video-env-letter-preview">
+          <p class="font-script text-2xl text-rose-700 font-bold">Lớp 10A1 kính gửi Thầy Cô 💖</p>
+          <p class="text-xs text-rose-900/80 mt-1">Bộ sưu tập 41 bức thư (Bìa vở A4 dọc & Thư A4 ngang)</p>
+        </div>
+        <div class="video-env-pocket"></div>
+        <div class="video-env-bottom-fold"></div>
+      </div>
+      <!-- Con dấu hoa ở tâm phong bì -->
+      <div class="wax-seal">
+        <svg class="w-8 h-8" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="16" r="8" fill="#fff0f3"/>
+          <circle cx="46" cy="24" r="8" fill="#ffd9e1"/>
+          <circle cx="42" cy="41" r="8" fill="#fff0f3"/>
+          <circle cx="22" cy="41" r="8" fill="#ffd9e1"/>
+          <circle cx="18" cy="24" r="8" fill="#fff0f3"/>
+          <circle cx="32" cy="30" r="6" fill="#6b1d2f"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Nút MỞ THƯ giống hệt cuối video -->
+    <div class="flex flex-col items-center">
+      <button id="btnOpenLetterMain" onclick="triggerOpenLettersPage()" class="open-letter-btn flex items-center gap-2">
+        <span>MỞ THƯ</span>
+        <span class="text-lg">👆</span>
+      </button>
+      <span class="text-xs text-[#9e5869] mt-2">Nhấn vào nút "MỞ THƯ" hoặc phong bì để xem 41 bức thư của lớp 10A1</span>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 4: TRANG 41 BỨC THƯ CỦA LỚP 10A1 (Nền tựa video + Thư mục image/) ================= -->
+  <main id="stage4Gallery" class="gallery-stage hidden-stage max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Tiêu đề trang thư -->
+    <div class="text-center mb-6">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/80 border border-pink-200 text-rose-700 text-xs font-semibold shadow-sm mb-2">
+        <span>📂 Thư mục nguồn: <code class="font-mono text-rose-800">image/</code> (41 cặp ảnh = 82 tệp ảnh A4)</span>
+      </div>
+      <h1 class="font-calligraphy text-5xl sm:text-6xl text-[#9e2a47] drop-shadow-sm">
+        Những bức thư từ 10A1 nè
+      </h1>
+      <p class="font-serif-vn italic text-sm sm:text-base text-[#7d4352] mt-1 max-w-2xl mx-auto">
+        Mỗi bức thư trong 41 tấm của lớp 10A1 được cấu thành từ <strong>2 hình ảnh</strong> trong thư mục <code class="bg-white/80 px-1.5 py-0.5 rounded border border-pink-200">image/</code>:
+        <strong>Tấm 1</strong> là bìa vở giấy A4 dọc (<code class="text-xs">image/bia_01..41.png</code>) và <strong>Tấm 2</strong> là cả bức thư &amp; lời nhắn trên 1 tấm ảnh A4 ngang (<code class="text-xs">image/thu_01..41.png</code>).
+      </p>
+    </div>
+
+    <!-- Thanh công cụ: Chuyển chế độ trình bày 2 ảnh, Tìm kiếm & Tải ảnh thật vào thư mục image/ -->
+    <div class="bg-white/85 backdrop-blur-md rounded-2xl p-3 sm:p-4 border border-pink-200/90 shadow-md mb-6 flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+      <!-- Chế độ hiển thị -->
+      <div class="flex flex-wrap items-center gap-2">
+        <span class="text-xs font-semibold text-rose-900 uppercase tracking-wider mr-1">Cách trình bày:</span>
+        <button id="modeCoverBtn" onclick="setGalleryViewMode('cover')" class="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-rose-600 text-white shadow-sm">
+          📒 Kệ Bìa Vở A4 Dọc (Nhấn mở Thư A4 Ngang)
+        </button>
+        <button id="modePairBtn" onclick="setGalleryViewMode('pair')" class="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-pink-50 text-rose-800 hover:bg-pink-100 border border-pink-200">
+          🖼️ Xem Cặp 2 Ảnh (Bìa A4 Dọc + Thư A4 Ngang)
+        </button>
+      </div>
+
+      <!-- Bộ lọc tổ & Tìm kiếm + Upload ảnh thật cho thư mục image/ -->
+      <div class="flex flex-wrap items-center gap-2">
+        <select id="groupFilter" onchange="filterLetters()" class="px-3 py-1.5 rounded-xl text-xs sm:text-sm bg-pink-50/70 border border-pink-200 text-rose-900 font-medium focus:outline-none focus:ring-2 focus:ring-rose-400">
+          <option value="all">Tất cả 41 bức thư (10A1)</option>
+          <option value="1">Tổ 1 (Thư #01 – #10)</option>
+          <option value="2">Tổ 2 (Thư #11 – #20)</option>
+          <option value="3">Tổ 3 (Thư #21 – #30)</option>
+          <option value="4">Tổ 4 (Thư #31 – #41)</option>
+        </select>
+
+        <div class="relative flex-1 sm:flex-initial">
+          <input id="searchInput" oninput="filterLetters()" type="text" placeholder="Tìm số thư (vd: 01, 15, 41)..." class="w-full sm:w-52 pl-3 pr-8 py-1.5 rounded-xl text-xs sm:text-sm bg-pink-50/70 border border-pink-200 text-rose-900 placeholder-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-400">
+        </div>
+
+        <label class="cursor-pointer px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300 transition flex items-center gap-1.5 shadow-sm" title="Chọn nhiều ảnh từ máy để thay thế bia_01..41 và thu_01..41">
+          <span>📁 Nạp ảnh vào <code class="font-mono">image/</code></span>
+          <input id="batchUploadInput" type="file" multiple accept="image/*" class="hidden" onchange="handleBatchImageUpload(event)">
+        </label>
+      </div>
+    </div>
+
+    <!-- Thông báo trạng thái số lượng thư -->
+    <div class="flex items-center justify-between text-xs sm:text-sm text-rose-900/80 mb-4 px-1">
+      <div id="letterCountStatus" class="font-medium">
+        Đang hiển thị <strong>41 / 41</strong> bức thư của lớp 10A1 (82 hình ảnh trong <code class="font-mono">image/</code>)
+      </div>
+      <button onclick="goToStage(1)" class="text-rose-700 hover:text-rose-900 underline font-medium">
+        ↺ Xem lại từ cảnh Xe tải &amp; Video
+      </button>
+    </div>
+
+    <!-- LƯỚI HIỂN THỊ 41 BỨC THƯ -->
+    <div id="lettersGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6"></div>
+  </main>
+
+  <!-- ================= MODAL XEM CHI TIẾT BỨC THƯ (TẤM 1: BÌA VỞ A4 DỌC & TẤM 2: THƯ + LỜI NHẮN A4 NGANG) ================= -->
+  <div id="letterModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/65 backdrop-blur-sm p-2 sm:p-4">
+    <div class="bg-[#fff8f9] border-2 border-pink-300 rounded-3xl max-w-6xl w-full max-h-[94vh] flex flex-col shadow-2xl overflow-hidden">
+      <!-- Modal Header -->
+      <div class="px-4 sm:px-6 py-3 bg-gradient-to-r from-pink-100 via-rose-50 to-pink-100 border-b border-pink-200 flex flex-wrap items-center justify-between gap-2">
+        <div>
+          <span id="modalBadge" class="text-xs font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-rose-600 text-white">
+            Bức thư #01 / 41
+          </span>
+          <h3 id="modalTitle" class="font-serif-vn font-bold text-lg sm:text-xl text-rose-900 inline-block ml-2">
+            Thành viên #01 • Lớp 10A1
+          </h3>
+        </div>
+
+        <!-- Chuyển đổi chế độ xem trong Modal -->
+        <div class="flex items-center gap-1.5">
+          <button id="modalTabBoth" onclick="setModalTab('both')" class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-600 text-white transition">
+            Cả 2 tấm (A4 Dọc + A4 Ngang)
+          </button>
+          <button id="modalTabCover" onclick="setModalTab('cover')" class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-rose-800 border border-pink-200 hover:bg-pink-50 transition">
+            Tấm 1: Bìa vở (A4 Dọc)
+          </button>
+          <button id="modalTabLetter" onclick="setModalTab('letter')" class="px-3 py-1 rounded-full text-xs font-semibold bg-white text-rose-800 border border-pink-200 hover:bg-pink-50 transition">
+            Tấm 2: Bức thư &amp; Lời nhắn (A4 Ngang)
+          </button>
+          <button onclick="closeLetterModal()" class="ml-2 w-8 h-8 rounded-full bg-rose-100 hover:bg-rose-200 text-rose-800 font-bold flex items-center justify-center transition" title="Đóng">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-4 sm:p-6 overflow-y-auto flex-1">
+        <div id="modalContentContainer" class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <!-- Tấm 1: Bìa vở giấy A4 dọc -->
+          <div id="modalCoverCol" class="lg:col-span-4 flex flex-col items-center">
+            <div class="w-full flex items-center justify-between mb-2 px-1">
+              <span class="text-xs font-bold text-rose-800 uppercase tracking-wide">
+                📒 Tấm 1: Bìa vở giấy A4 dọc (210×297mm)
+              </span>
+              <code id="modalCoverPath" class="text-[11px] bg-pink-100 text-rose-800 px-2 py-0.5 rounded font-mono">
+                image/bia_01.png
+              </code>
+            </div>
+            <div class="w-full max-w-[300px] aspect-a4-portrait bg-white rounded-2xl shadow-lg border-2 border-pink-200 overflow-hidden relative">
+              <img id="modalCoverImg" src="" alt="Bìa vở giấy A4 dọc" class="w-full h-full object-contain bg-[#fff5f7]">
+            </div>
+            <label class="mt-2.5 cursor-pointer text-xs font-semibold text-rose-700 hover:text-rose-900 bg-white px-3 py-1.5 rounded-full border border-pink-200 shadow-sm transition">
+              📷 Thay ảnh Bìa A4 dọc này
+              <input type="file" accept="image/*" class="hidden" onchange="replaceSingleImage(event, 'cover')">
+            </label>
+          </div>
+
+          <!-- Tấm 2: Cả bức thư và lời nhắn cấu tạo từ 1 tấm ảnh A4 ngang -->
+          <div id="modalLetterCol" class="lg:col-span-8 flex flex-col items-center">
+            <div class="w-full flex items-center justify-between mb-2 px-1">
+              <span class="text-xs font-bold text-rose-800 uppercase tracking-wide">
+                💌 Tấm 2: Bức thư &amp; Lời nhắn (1 tấm ảnh A4 ngang 297×210mm)
+              </span>
+              <code id="modalLetterPath" class="text-[11px] bg-pink-100 text-rose-800 px-2 py-0.5 rounded font-mono">
+                image/thu_01.png
+              </code>
+            </div>
+            <div class="w-full aspect-a4-landscape bg-white rounded-2xl shadow-lg border-2 border-pink-200 overflow-hidden relative">
+              <img id="modalLetterImg" src="" alt="Bức thư và lời nhắn A4 ngang" class="w-full h-full object-contain bg-[#fff5f7]">
+            </div>
+            <label class="mt-2.5 cursor-pointer text-xs font-semibold text-rose-700 hover:text-rose-900 bg-white px-3 py-1.5 rounded-full border border-pink-200 shadow-sm transition">
+              📷 Thay ảnh Thư &amp; Lời nhắn A4 ngang này
+              <input type="file" accept="image/*" class="hidden" onchange="replaceSingleImage(event, 'letter')">
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer: Điều hướng qua lại giữa 41 bức thư -->
+      <div class="px-4 sm:px-6 py-3 bg-pink-50 border-t border-pink-200 flex items-center justify-between">
+        <button onclick="navigateModal(-1)" class="px-4 py-1.5 rounded-full bg-white hover:bg-pink-100 text-rose-800 font-semibold text-xs sm:text-sm border border-pink-200 shadow-sm transition">
+          ← Bức thư trước
+        </button>
+        <span id="modalFooterInfo" class="text-xs text-rose-800 font-medium hidden sm:inline">
+          Sử dụng phím mũi tên ← / → để lật xem nhanh 41 bức thư của 10A1
+        </span>
+        <button onclick="navigateModal(1)" class="px-4 py-1.5 rounded-full bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs sm:text-sm shadow-sm transition">
+          Bức thư tiếp theo →
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast thông báo -->
+  <div id="toastBox" class="fixed bottom-4 right-4 z-50 hidden bg-rose-900 text-white text-xs sm:text-sm px-4 py-2.5 rounded-2xl shadow-xl border border-pink-300"></div>
+
+  <script>
+    // Dữ liệu 41 bức thư của tập thể lớp 10A1
+    var SAMPLE_WISHES = [
+      {
+        body: "Cảm ơn thầy cô đã luôn kiên nhẫn dìu dắt chúng em trong những ngày đầu bỡ ngỡ bước vào lớp 10. Chúc thầy cô 20/11 luôn rạng rỡ và hạnh phúc!",
+        note: "Mãi yêu thương và biết ơn thầy cô!"
+      },
+      {
+        body: "Những bài giảng của thầy cô không chỉ mang đến kiến thức mà còn thắp lên trong chúng em ước mơ. Chúc thầy cô thật nhiều sức khỏe!",
+        note: "Chúc thầy cô luôn giữ mãi nụ cười tươi!"
+      },
+      {
+        body: "Nhân ngày Nhà giáo Việt Nam 20/11, em xin gửi ngàn lời chúc tốt đẹp nhất đến thầy cô. Cảm ơn thầy cô vì tất cả tâm huyết dành cho 10A1.",
+        note: "10A1 hứa sẽ chăm ngoan và học giỏi hơn!"
+      },
+      {
+        body: "Dù chúng em đôi lúc còn tinh nghịch, thầy cô vẫn luôn bao dung và ân cần chỉ bảo. Chúc thầy cô một mùa Hiến chương thật ấm áp!",
+        note: "Thầy cô là thanh xuân đẹp nhất của 10A1!"
+      },
+      {
+        body: "Mỗi giờ học cùng thầy cô đều là một hành trình thú vị. Chúc thầy cô luôn tràn đầy nhiệt huyết trên bục giảng!",
+        note: "Gửi ngàn bông hoa tươi thắm đến thầy cô!"
+      },
+      {
+        body: "Cảm ơn người lái đò thầm lặng đã đưa tập thể 10A1 cập bến tri thức. Chúc thầy cô luôn bình an, mạnh khỏe và tràn ngập niềm vui.",
+        note: "Tri ân thầy cô nhân ngày 20/11!"
+      },
+      {
+        body: "Bước vào cấp 3 với biết bao điều mới mẻ, thật may mắn vì chúng em có thầy cô đồng hành. Chúc thầy cô ngày 20/11 thật ý nghĩa!",
+        note: "Chúc thầy cô vạn sự như ý!"
+      },
+      {
+        body: "Từng trang vở hồng hôm nay chúng em viết nên đều gửi gắm lòng biết ơn sâu sắc tới thầy cô. Chúc thầy cô mãi trẻ trung và yêu đời!",
+        note: "Yêu thầy cô rất nhiều!"
+      },
+      {
+        body: "Chúc thầy cô có một ngày 20/11 ngập tràn hoa tươi, những lời chúc ngọt ngào và tình cảm chân thành từ đại gia đình 10A1.",
+        note: "Cảm ơn thầy cô đã luôn tin tưởng chúng em!"
+      },
+      {
+        body: "Những lời dạy bảo của thầy cô sẽ là hành trang quý giá theo chúng em suốt cuộc đời. Chúc thầy cô luôn mạnh khỏe và hạnh phúc!",
+        note: "10A1 mãi là ngôi nhà ấm áp!"
+      }
+    ];
+
+    var COLOR_THEMES = [
+      { bg: "#fff5f7", border: "#f8c8d4", accent: "#b83b5e", soft: "#fce4ec" },
+      { bg: "#fff8f3", border: "#f7d1ba", accent: "#b5483a", soft: "#fdf0e6" },
+      { bg: "#fdf6ff", border: "#e2c4f0", accent: "#7b3f8c", soft: "#f5e8fc" },
+      { bg: "#f5f9ff", border: "#c4daf5", accent: "#3a5f8c", soft: "#e8f1fc" },
+      { bg: "#f6fff8", border: "#bfe8cb", accent: "#2f7a4c", soft: "#e6f9ec" }
+    ];
+
+    function pad2(n) {
+      return n < 10 ? "0" + n : "" + n;
+    }
+
+    // Tạo ảnh SVG chuẩn khổ A4 dọc (210x297) cho Tấm 1 (Bìa vở giấy A4 dọc)
+    function createPortraitCoverSvgUri(id, sender, theme) {
+      var numStr = pad2(id);
+      var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">' +
+        '<rect width="595" height="842" fill="' + theme.bg + '"/>' +
+        '<rect x="0" y="0" width="42" height="842" fill="' + theme.border + '"/>';
+      for (var y = 36; y < 815; y += 38) {
+        svg += '<circle cx="21" cy="' + y + '" r="7" fill="#ffffff" stroke="' + theme.accent + '" stroke-width="1.5"/>';
+      }
+      for (var ly = 85; ly < 780; ly += 28) {
+        svg += '<line x1="60" y1="' + ly + '" x2="558" y2="' + ly + '" stroke="#f0dce2" stroke-width="1"/>';
+      }
+      svg +=
+        '<rect x="65" y="45" width="495" height="752" rx="18" fill="none" stroke="' + theme.border + '" stroke-width="4"/>' +
+        '<rect x="77" y="57" width="471" height="728" rx="12" fill="none" stroke="' + theme.accent + '" stroke-width="2"/>' +
+        '<g transform="translate(312,128)">' +
+          '<circle cx="0" cy="-22" r="14" fill="' + theme.border + '" stroke="#fff"/>' +
+          '<circle cx="19" cy="-8" r="14" fill="' + theme.border + '" stroke="#fff"/>' +
+          '<circle cx="12" cy="17" r="14" fill="' + theme.border + '" stroke="#fff"/>' +
+          '<circle cx="-12" cy="17" r="14" fill="' + theme.border + '" stroke="#fff"/>' +
+          '<circle cx="-19" cy="-8" r="14" fill="' + theme.border + '" stroke="#fff"/>' +
+          '<circle cx="0" cy="0" r="10" fill="' + theme.accent + '"/>' +
+        '</g>' +
+        '<rect x="180" y="188" width="265" height="42" rx="21" fill="' + theme.accent + '"/>' +
+        '<text x="312" y="215" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="16" font-weight="bold">KỶ NIỆM 20/11 • LỚP 10A1</text>' +
+        '<rect x="115" y="268" width="395" height="280" rx="16" fill="#ffffff" stroke="' + theme.accent + '" stroke-width="3"/>' +
+        '<rect x="125" y="278" width="375" height="260" rx="12" fill="none" stroke="' + theme.border + '" stroke-width="1.2"/>' +
+        '<text x="312" y="328" text-anchor="middle" fill="' + theme.accent + '" font-family="serif" font-size="28" font-weight="bold">BỨC THƯ TRI ÂN</text>' +
+        '<text x="312" y="365" text-anchor="middle" fill="#6b535c" font-family="sans-serif" font-style="italic" font-size="17">Bìa Vở Giấy A4 Dọc • Tấm #' + numStr + '/41</text>' +
+        '<line x1="165" y1="392" x2="460" y2="392" stroke="' + theme.border + '" stroke-width="2"/>' +
+        '<text x="150" y="432" fill="#3d2c33" font-family="sans-serif" font-size="17">Người gửi: ' + sender + '</text>' +
+        '<text x="150" y="468" fill="#3d2c33" font-family="sans-serif" font-size="17">Gửi đến: Thầy Cô kính yêu</text>' +
+        '<text x="150" y="504" fill="#7a5c66" font-family="sans-serif" font-style="italic" font-size="16">Khổ giấy: A4 Dọc (210×297mm)</text>' +
+        '<circle cx="312" cy="645" r="54" fill="' + theme.soft + '" stroke="' + theme.accent + '" stroke-width="3"/>' +
+        '<text x="312" y="660" text-anchor="middle" fill="' + theme.accent + '" font-family="serif" font-size="42" font-weight="bold">#' + numStr + '</text>' +
+        '<text x="312" y="742" text-anchor="middle" fill="#7a5c66" font-family="sans-serif" font-size="14">Nhấn để mở trang trong (Ảnh A4 ngang)</text>' +
+        '<text x="312" y="768" text-anchor="middle" fill="#9e828b" font-family="monospace" font-size="13">image/bia_' + numStr + '.png</text>' +
+      '</svg>';
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    }
+
+    // Tạo ảnh SVG chuẩn khổ A4 ngang (297x210) cho Tấm 2 (Bức thư và lời nhắn trên 1 tấm ảnh A4 ngang)
+    function createLandscapeLetterSvgUri(id, sender, wishObj, theme) {
+      var numStr = pad2(id);
+      var words = wishObj.body.split(" ");
+      var lines = [];
+      var cur = "";
+      for (var i = 0; i < words.length; i++) {
+        var test = (cur + " " + words[i]).trim();
+        if (test.length <= 42) {
+          cur = test;
+        } else {
+          lines.push(cur);
+          cur = words[i];
+        }
+      }
+      if (cur) lines.push(cur);
+
+      var textLinesSvg = "";
+      var yPos = 180;
+      for (var j = 0; j < lines.length; j++) {
+        textLinesSvg += '<text x="95" y="' + yPos + '" fill="#36262c" font-family="sans-serif" font-size="16">' + lines[j] + '</text>';
+        yPos += 30;
+      }
+
+      var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842 595" width="842" height="595">' +
+        '<rect width="842" height="595" fill="' + theme.bg + '"/>' +
+        '<rect x="18" y="18" width="806" height="559" rx="16" fill="#fffcfd" stroke="' + theme.border + '" stroke-width="4"/>' +
+        '<line x1="485" y1="34" x2="485" y2="561" stroke="' + theme.border + '" stroke-width="2" stroke-dasharray="6,4"/>' +
+        '<rect x="38" y="38" width="427" height="519" rx="12" fill="#ffffff" stroke="' + theme.soft + '" stroke-width="2"/>';
+      for (var ry = 130; ry < 530; ry += 30) {
+        svg += '<line x1="58" y1="' + ry + '" x2="445" y2="' + ry + '" stroke="#f2dfe4" stroke-width="1"/>';
+      }
+      svg +=
+        '<line x1="82" y1="38" x2="82" y2="557" stroke="#f7c6d0" stroke-width="1.2"/>' +
+        '<text x="252" y="72" text-anchor="middle" fill="' + theme.accent + '" font-family="serif" font-size="24" font-weight="bold">BỨC THƯ SỐ #' + numStr + ' - LỚP 10A1</text>' +
+        '<text x="252" y="102" text-anchor="middle" fill="#7a5c66" font-family="sans-serif" font-size="13.5">Thân gửi Thầy Cô nhân ngày Nhà giáo Việt Nam 20/11</text>' +
+        '<text x="95" y="148" fill="' + theme.accent + '" font-family="sans-serif" font-style="italic" font-weight="bold" font-size="16.5">Thầy cô kính mến,</text>' +
+        textLinesSvg +
+        '<text x="95" y="' + (yPos + 15) + '" fill="#36262c" font-family="sans-serif" font-size="16">Chúng em chúc thầy cô luôn dồi dào sức khỏe,</text>' +
+        '<text x="95" y="' + (yPos + 45) + '" fill="#36262c" font-family="sans-serif" font-size="16">hạnh phúc và mãi là ngọn hải đăng soi đường</text>' +
+        '<text x="95" y="' + (yPos + 75) + '" fill="#36262c" font-family="sans-serif" font-size="16">cho tập thể lớp 10A1 thân yêu!</text>' +
+        '<text x="435" y="518" text-anchor="end" fill="' + theme.accent + '" font-family="sans-serif" font-style="italic" font-weight="bold" font-size="16">— ' + sender + '</text>' +
+        /* Khung lời nhắn bên phải trên cùng tấm ảnh A4 ngang */
+        '<rect x="505" y="50" width="297" height="290" rx="14" fill="' + theme.soft + '" stroke="' + theme.accent + '" stroke-width="2"/>' +
+        '<text x="653" y="92" text-anchor="middle" fill="' + theme.accent + '" font-family="sans-serif" font-size="16" font-weight="bold">— LỜI NHẮN NHỦ TỪ 10A1 —</text>' +
+        '<line x1="535" y1="110" x2="772" y2="110" stroke="' + theme.border + '" stroke-width="2"/>' +
+        '<text x="653" y="152" text-anchor="middle" fill="#3d2930" font-family="sans-serif" font-style="italic" font-size="16">“' + wishObj.note + '</text>' +
+        '<text x="653" y="182" text-anchor="middle" fill="#3d2930" font-family="sans-serif" font-style="italic" font-size="15.5">Cảm ơn thầy cô đã luôn yêu thương</text>' +
+        '<text x="653" y="210" text-anchor="middle" fill="#3d2930" font-family="sans-serif" font-style="italic" font-size="15.5">và đồng hành cùng 41 thành viên</text>' +
+        '<text x="653" y="238" text-anchor="middle" fill="#3d2930" font-family="sans-serif" font-style="italic" font-size="15.5">tập thể lớp 10A1!”</text>' +
+        '<rect x="538" y="272" width="230" height="40" rx="20" fill="#ffffff" stroke="' + theme.border + '" stroke-width="1.5"/>' +
+        '<text x="653" y="297" text-anchor="middle" fill="' + theme.accent + '" font-family="sans-serif" font-size="13.5" font-weight="bold">10A1 • Trọn vẹn ân tình #' + numStr + '/41</text>' +
+        /* Khung thông tin tệp A4 ngang góc dưới phải */
+        '<rect x="505" y="365" width="297" height="190" rx="14" fill="#ffffff" stroke="' + theme.border + '" stroke-width="2"/>' +
+        '<circle cx="558" cy="455" r="26" fill="' + theme.soft + '" stroke="' + theme.accent + '" stroke-width="2"/>' +
+        '<text x="558" y="462" text-anchor="middle" fill="' + theme.accent + '" font-family="serif" font-size="20" font-weight="bold">A4</text>' +
+        '<text x="600" y="415" fill="' + theme.accent + '" font-family="sans-serif" font-size="15" font-weight="bold">THƯ VIỆN THƯ 10A1</text>' +
+        '<text x="600" y="442" fill="#4e3840" font-family="sans-serif" font-size="13.5">Tấm 2: Bức thư &amp; Lời nhắn</text>' +
+        '<text x="600" y="468" fill="#7a5c66" font-family="sans-serif" font-size="13.5">Khổ giấy: A4 Ngang (297×210mm)</text>' +
+        '<text x="600" y="494" fill="#9e828b" font-family="monospace" font-size="13">image/thu_' + numStr + '.png</text>' +
+      '</svg>';
+      return "data:image/svg+xml;utf8," + encodeURIComponent(svg);
+    }
+
+    var LETTERS_DATA = [];
+    for (var k = 1; k <= 41; k++) {
+      var wish = SAMPLE_WISHES[(k - 1) % SAMPLE_WISHES.length];
+      var theme = COLOR_THEMES[(k - 1) % COLOR_THEMES.length];
+      var senderName = "Thành viên #" + pad2(k) + " • Lớp 10A1";
+      var groupNum = k <= 10 ? 1 : (k <= 20 ? 2 : (k <= 30 ? 3 : 4));
+      var numStr = pad2(k);
+      LETTERS_DATA.push({
+        id: k,
+        numStr: numStr,
+        sender: senderName,
+        group: groupNum,
+        coverPath: "image/bia_" + numStr + ".png",
+        letterPath: "image/thu_" + numStr + ".png",
+        coverSrc: createPortraitCoverSvgUri(k, senderName, theme),
+        letterSrc: createLandscapeLetterSvgUri(k, senderName, wish, theme),
+        wish: wish
+      });
+    }
+
+    var currentStage = 1;
+    var stageTimers = [];
+    var galleryViewMode = "cover"; // 'cover' or 'pair'
+    var currentModalIndex = 0;
+    var currentModalTab = "both";
+
+    function clearStageTimers() {
+      for (var i = 0; i < stageTimers.length; i++) {
+        clearTimeout(stageTimers[i]);
+      }
+      stageTimers = [];
+    }
+
+    function updateNavHighlight(stage) {
+      var ids = ["navStage1", "navStage2", "navStage3", "navStage4"];
+      for (var i = 0; i < ids.length; i++) {
+        var el = document.getElementById(ids[i]);
+        if (!el) continue;
+        if (i + 1 === stage) {
+          el.className = "px-2.5 py-1 rounded-full font-semibold transition bg-rose-600 text-white shadow-sm";
+        } else {
+          el.className = "px-2.5 py-1 rounded-full font-medium transition text-rose-800 hover:bg-rose-100";
+        }
+      }
+    }
+
+    function spawnConfettiBurst() {
+      var colors = ["#f46b8a", "#fca5bb", "#d9385e", "#ffccd7", "#eab308"];
+      for (var i = 0; i < 36; i++) {
+        var dot = document.createElement("div");
+        dot.className = "sparkle-confetti";
+        dot.style.left = (20 + Math.random() * 60) + "vw";
+        dot.style.top = (20 + Math.random() * 45) + "vh";
+        dot.style.backgroundColor = colors[i % colors.length];
+        var dx = (Math.random() - 0.5) * 260 + "px";
+        var dy = (60 + Math.random() * 200) + "px";
+        dot.style.setProperty("--dx", dx);
+        dot.style.setProperty("--dy", dy);
+        document.body.appendChild(dot);
+        setTimeout((function(el) {
+          return function() {
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+          };
+        })(dot), 2300);
+      }
+    }
+
+    window.goToStage = function(stageNum) {
+      clearStageTimers();
+      currentStage = stageNum;
+      updateNavHighlight(stageNum);
+
+      var s1 = document.getElementById("stage1Truck");
+      var s2 = document.getElementById("stage2VideoIntro");
+      var s3 = document.getElementById("stage3Envelope");
+      var s4 = document.getElementById("stage4Gallery");
+      var env = document.getElementById("interactiveEnvelope");
+
+      s1.classList.add("hidden-stage");
+      s2.classList.add("hidden-stage");
+      s2.classList.remove("active-anim");
+      s3.classList.add("hidden-stage");
+      s4.classList.add("hidden-stage");
+      if (env) env.classList.remove("opening");
+
+      if (stageNum === 1) {
+        s1.classList.remove("hidden-stage");
+        var runner = document.getElementById("truckRunner");
+        if (runner) {
+          runner.style.animation = "none";
+          void runner.offsetHeight;
+          runner.style.animation = "";
+        }
+        stageTimers.push(setTimeout(function() {
+          if (currentStage === 1) window.goToStage(2);
+        }, 5200));
+      } else if (stageNum === 2) {
+        s2.classList.remove("hidden-stage");
+        void s2.offsetHeight;
+        s2.classList.add("active-anim");
+        stageTimers.push(setTimeout(function() {
+          if (currentStage === 2) window.goToStage(3);
+        }, 4600));
+      } else if (stageNum === 3) {
+        spawnConfettiBurst();
+        s3.classList.remove("hidden-stage");
+      } else if (stageNum === 4) {
+        s4.classList.remove("hidden-stage");
+        renderLettersGrid();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    window.triggerOpenLettersPage = function() {
+      var env = document.getElementById("interactiveEnvelope");
+      if (env) env.classList.add("opening");
+      spawnConfettiBurst();
+      setTimeout(function() {
+        window.goToStage(4);
+      }, 750);
+    };
+
+    window.setGalleryViewMode = function(mode) {
+      galleryViewMode = mode;
+      var btnCover = document.getElementById("modeCoverBtn");
+      var btnPair = document.getElementById("modePairBtn");
+      var grid = document.getElementById("lettersGrid");
+
+      if (mode === "cover") {
+        btnCover.className = "px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-rose-600 text-white shadow-sm";
+        btnPair.className = "px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-pink-50 text-rose-800 hover:bg-pink-100 border border-pink-200";
+        grid.className = "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6";
+      } else {
+        btnPair.className = "px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-rose-600 text-white shadow-sm";
+        btnCover.className = "px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold transition bg-pink-50 text-rose-800 hover:bg-pink-100 border border-pink-200";
+        grid.className = "grid grid-cols-1 md:grid-cols-2 gap-6";
+      }
+      renderLettersGrid();
+    };
+
+    window.filterLetters = function() {
+      renderLettersGrid();
+    };
+
+    function getFilteredLetters() {
+      var grp = document.getElementById("groupFilter").value;
+      var q = (document.getElementById("searchInput").value || "").trim().toLowerCase();
+      var out = [];
+      for (var i = 0; i < LETTERS_DATA.length; i++) {
+        var item = LETTERS_DATA[i];
+        if (grp !== "all" && String(item.group) !== grp) continue;
+        if (q) {
+          var hay = (item.numStr + " " + item.sender + " " + item.coverPath + " " + item.letterPath + " " + item.wish.body).toLowerCase();
+          if (hay.indexOf(q) === -1) continue;
+        }
+        out.push(item);
+      }
+      return out;
+    }
+
+    function renderLettersGrid() {
+      var grid = document.getElementById("lettersGrid");
+      var list = getFilteredLetters();
+      var status = document.getElementById("letterCountStatus");
+      if (status) {
+        status.innerHTML = 'Đang hiển thị <strong>' + list.length + ' / 41</strong> bức thư của lớp 10A1 (Thư mục <code class="font-mono">image/</code>)';
+      }
+
+      var html = "";
+      for (var i = 0; i < list.length; i++) {
+        var item = list[i];
+        if (galleryViewMode === "cover") {
+          html +=
+            '<article onclick="openLetterModal(' + (item.id - 1) + ')" class="letter-card cursor-pointer bg-white/90 rounded-2xl p-2.5 border-2 border-pink-200/90 shadow-md flex flex-col justify-between group">' +
+              '<div class="relative w-full aspect-a4-portrait rounded-xl overflow-hidden bg-pink-50 border border-pink-100">' +
+                '<img src="' + item.coverSrc + '" alt="Bìa vở A4 dọc #' + item.numStr + '" class="w-full h-full object-contain transition duration-300 group-hover:scale-[1.03]">' +
+                '<div class="absolute inset-0 bg-gradient-to-t from-rose-950/75 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end justify-center p-3">' +
+                  '<span class="px-3 py-1 rounded-full bg-white text-rose-700 font-bold text-xs shadow">📖 Mở Thư &amp; Lời Nhắn (A4 Ngang)</span>' +
+                '</div>' +
+              '</div>' +
+              '<div class="mt-2.5 px-1 flex items-center justify-between">' +
+                '<div>' +
+                  '<h3 class="font-bold text-xs sm:text-sm text-rose-900">Bức thư #' + item.numStr + ' • 10A1</h3>' +
+                  '<p class="text-[11px] text-rose-600 font-mono">2 ảnh: A4 dọc + A4 ngang</p>' +
+                '</div>' +
+                '<span class="w-7 h-7 rounded-full bg-pink-100 text-rose-700 font-bold text-xs flex items-center justify-center group-hover:bg-rose-600 group-hover:text-white transition">➔</span>' +
+              '</div>' +
+            '</article>';
+        } else {
+          // Chế độ hiển thị cặp 2 hình ảnh (Tấm 1: Bìa vở giấy A4 dọc + Tấm 2: Bức thư & lời nhắn A4 ngang)
+          html +=
+            '<article onclick="openLetterModal(' + (item.id - 1) + ')" class="letter-card cursor-pointer bg-white/90 rounded-2xl p-4 border-2 border-pink-200/90 shadow-md flex flex-col gap-3">' +
+              '<div class="flex items-center justify-between border-b border-pink-100 pb-2">' +
+                '<div>' +
+                  '<span class="px-2.5 py-0.5 rounded-full bg-rose-600 text-white font-bold text-xs">Bức thư #' + item.numStr + '/41</span>' +
+                  '<span class="ml-2 font-bold text-sm text-rose-900">' + item.sender + '</span>' +
+                '</div>' +
+                '<span class="text-xs text-rose-700 font-semibold hover:underline">Phóng to 2 ảnh ⤢</span>' +
+              '</div>' +
+              '<div class="grid grid-cols-12 gap-3 items-center">' +
+                '<div class="col-span-4 flex flex-col items-center">' +
+                  '<span class="text-[11px] font-semibold text-rose-800 mb-1">Tấm 1: Bìa vở A4 dọc</span>' +
+                  '<div class="w-full aspect-a4-portrait rounded-lg overflow-hidden border border-pink-200 bg-pink-50">' +
+                    '<img src="' + item.coverSrc + '" alt="Bìa A4 dọc #' + item.numStr + '" class="w-full h-full object-contain">' +
+                  '</div>' +
+                  '<code class="text-[10px] text-rose-500 mt-1 font-mono">' + item.coverPath + '</code>' +
+                '</div>' +
+                '<div class="col-span-8 flex flex-col items-center">' +
+                  '<span class="text-[11px] font-semibold text-rose-800 mb-1">Tấm 2: Bức thư &amp; Lời nhắn (A4 ngang)</span>' +
+                  '<div class="w-full aspect-a4-landscape rounded-lg overflow-hidden border border-pink-200 bg-pink-50">' +
+                    '<img src="' + item.letterSrc + '" alt="Thư A4 ngang #' + item.numStr + '" class="w-full h-full object-contain">' +
+                  '</div>' +
+                  '<code class="text-[10px] text-rose-500 mt-1 font-mono">' + item.letterPath + '</code>' +
+                '</div>' +
+              '</div>' +
+            '</article>';
+        }
+      }
+
+      grid.innerHTML = html;
+    }
+
+    window.openLetterModal = function(index) {
+      currentModalIndex = index;
+      var modal = document.getElementById("letterModal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      updateModalView();
+    };
+
+    window.closeLetterModal = function() {
+      var modal = document.getElementById("letterModal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    };
+
+    window.setModalTab = function(tabName) {
+      currentModalTab = tabName;
+      var tBoth = document.getElementById("modalTabBoth");
+      var tCover = document.getElementById("modalTabCover");
+      var tLetter = document.getElementById("modalTabLetter");
+      var cCol = document.getElementById("modalCoverCol");
+      var lCol = document.getElementById("modalLetterCol");
+
+      tBoth.className = "px-3 py-1 rounded-full text-xs font-semibold transition " + (tabName === "both" ? "bg-rose-600 text-white" : "bg-white text-rose-800 border border-pink-200 hover:bg-pink-50");
+      tCover.className = "px-3 py-1 rounded-full text-xs font-semibold transition " + (tabName === "cover" ? "bg-rose-600 text-white" : "bg-white text-rose-800 border border-pink-200 hover:bg-pink-50");
+      tLetter.className = "px-3 py-1 rounded-full text-xs font-semibold transition " + (tabName === "letter" ? "bg-rose-600 text-white" : "bg-white text-rose-800 border border-pink-200 hover:bg-pink-50");
+
+      if (tabName === "both") {
+        cCol.className = "lg:col-span-4 flex flex-col items-center";
+        lCol.className = "lg:col-span-8 flex flex-col items-center";
+      } else if (tabName === "cover") {
+        cCol.className = "lg:col-span-12 flex flex-col items-center";
+        lCol.className = "hidden";
+      } else {
+        cCol.className = "hidden";
+        lCol.className = "lg:col-span-12 flex flex-col items-center";
+      }
+    };
+
+    function updateModalView() {
+      var item = LETTERS_DATA[currentModalIndex];
+      if (!item) return;
+      document.getElementById("modalBadge").textContent = "Bức thư #" + item.numStr + " / 41";
+      document.getElementById("modalTitle").textContent = item.sender;
+      document.getElementById("modalCoverPath").textContent = item.coverPath;
+      document.getElementById("modalLetterPath").textContent = item.letterPath;
+      document.getElementById("modalCoverImg").src = item.coverSrc;
+      document.getElementById("modalLetterImg").src = item.letterSrc;
+      window.setModalTab(currentModalTab);
+    }
+
+    window.navigateModal = function(delta) {
+      currentModalIndex = (currentModalIndex + delta + LETTERS_DATA.length) % LETTERS_DATA.length;
+      updateModalView();
+    };
+
+    window.replaceSingleImage = function(event, type) {
+      var file = event.target.files && event.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        var item = LETTERS_DATA[currentModalIndex];
+        if (type === "cover") {
+          item.coverSrc = e.target.result;
+          showToast("Đã cập nhật Tấm 1 (Bìa vở A4 dọc) cho Bức thư #" + item.numStr);
+        } else {
+          item.letterSrc = e.target.result;
+          showToast("Đã cập nhật Tấm 2 (Bức thư & lời nhắn A4 ngang) cho Bức thư #" + item.numStr);
+        }
+        updateModalView();
+        renderLettersGrid();
+      };
+      reader.readAsDataURL(file);
+    };
+
+    window.handleBatchImageUpload = function(event) {
+      var files = event.target.files;
+      if (!files || !files.length) return;
+      var updatedCount = 0;
+      for (var i = 0; i < files.length; i++) {
+        (function(file) {
+          var name = file.name.toLowerCase();
+          var match = name.match(/(\d+)/);
+          var idx = match ? parseInt(match[1], 10) : null;
+          if (!idx || idx < 1 || idx > 41) return;
+          var isCover = name.indexOf("bia") !== -1 || name.indexOf("cover") !== -1 || name.indexOf("doc") !== -1;
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            if (isCover) {
+              LETTERS_DATA[idx - 1].coverSrc = e.target.result;
+            } else {
+              LETTERS_DATA[idx - 1].letterSrc = e.target.result;
+            }
+            renderLettersGrid();
+          };
+          reader.readAsDataURL(file);
+          updatedCount++;
+        })(files[i]);
+      }
+      showToast("Đã nạp " + updatedCount + " tệp ảnh vào bộ sưu tập 41 bức thư 10A1!");
+    };
+
+    function showToast(msg) {
+      var box = document.getElementById("toastBox");
+      box.textContent = msg;
+      box.classList.remove("hidden");
+      setTimeout(function() {
+        box.classList.add("hidden");
+      }, 3200);
+    }
+
+    // Nhạc nền dịu dàng ngày 20/11 bằng Web Audio API
+    var audioCtx = null;
+    var isPlayingMusic = false;
+    var musicInterval = null;
+
+    window.toggleBackgroundMusic = function() {
+      var icon = document.getElementById("musicIcon");
+      if (isPlayingMusic) {
+        isPlayingMusic = false;
+        if (musicInterval) clearInterval(musicInterval);
+        icon.textContent = "🔇";
+        showToast("Đã tắt nhạc nền 20/11");
+        return;
+      }
+      var AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      if (!audioCtx) audioCtx = new AudioContextClass();
+      if (audioCtx.state === "suspended") audioCtx.resume();
+      isPlayingMusic = true;
+      icon.textContent = "🎵";
+      showToast("Đang phát giai điệu piano dịu dàng kỷ niệm 20/11");
+
+      var melody = [523.25, 659.25, 783.99, 659.25, 698.46, 587.33, 523.25, 587.33, 659.25, 523.25, 440.00, 493.88];
+      var step = 0;
+      function playNote() {
+        if (!isPlayingMusic || !audioCtx) return;
+        var osc = audioCtx.createOscillator();
+        var gain = audioCtx.createGain();
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(melody[step % melody.length], audioCtx.currentTime);
+        gain.gain.setValueAtTime(0.001, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 1.1);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 1.15);
+        step++;
+      }
+      playNote();
+      musicInterval = setInterval(playNote, 650);
+    };
+
+    // Hỗ trợ phím mũi tên & Escape khi đang mở Modal
+    document.addEventListener("keydown", function(e) {
+      var modal = document.getElementById("letterModal");
+      if (!modal || modal.classList.contains("hidden")) return;
+      if (e.key === "ArrowLeft") window.navigateModal(-1);
+      if (e.key === "ArrowRight") window.navigateModal(1);
+      if (e.key === "Escape") window.closeLetterModal();
+    });
+
+    // Khởi chạy tự động từ Cảnh 1 (Xe tải chạy qua -> Animation Video -> Phong bì Mở thư)
+    window.addEventListener("DOMContentLoaded", function() {
+      renderLettersGrid();
+      window.goToStage(1);
+    });
+  </script>
+</body>
+</html>
