@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Có Những Bức Thư Từ 10A1 Nè - 20/11</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-bg-outer: #f2cbd4;
+      --pink-bg-mid: #fbe9ed;
+      --pink-bg-center: #fffafa;
+      --burgundy: #9e2a47;
+    }
+
+    * {
+      box-sizing: border-box;
+      user-select: none;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+      background: radial-gradient(ellipse at center, var(--pink-bg-center) 0%, var(--pink-bg-mid) 52%, var(--pink-bg-outer) 100%);
+      min-height: 100vh;
+      color: #4a2c35;
+    }
+
+    .font-calligraphy {
+      font-family: 'Great Vibes', 'Dancing Script', cursive;
+    }
+
+    .font-script {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .font-serif-vn {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Background tựa như video */
+    .video-like-bg {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(255, 253, 253, 0.96) 0%, rgba(253, 234, 238, 0.88) 46%, rgba(242, 198, 209, 0.85) 82%, rgba(232, 178, 192, 0.92) 100%);
+    }
+
+    .speckle-layer {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(rgba(186, 95, 118, 0.22) 1.2px, transparent 1.2px),
+        radial-gradient(rgba(218, 142, 160, 0.18) 1.5px, transparent 1.5px);
+      background-size: 48px 48px, 72px 72px;
+      background-position: 0 0, 24px 24px;
+      opacity: 0.7;
+    }
+
+    .sway-left {
+      transform-origin: bottom left;
+      animation: gentleSwayLeft 5.5s ease-in-out infinite alternate;
+    }
+
+    .sway-right {
+      transform-origin: bottom right;
+      animation: gentleSwayRight 6s ease-in-out infinite alternate;
+    }
+
+    @keyframes gentleSwayLeft {
+      0% { transform: rotate(-2deg) scale(1); }
+      100% { transform: rotate(3.5deg) scale(1.02); }
+    }
+
+    @keyframes gentleSwayRight {
+      0% { transform: rotate(2deg) scale(1); }
+      100% { transform: rotate(-3.5deg) scale(1.02); }
+    }
+
+    /* ================= STAGE 1: HIỆU ỨNG XE TẢI CHẠY QUA ================= */
+    .truck-stage-wrapper {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .truck-stage-wrapper.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .truck-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+
+    .truck-Runner {
+      position: relative;
+      height: 320px;
+      width: 400px;
+      animation: truckDriveAcross 5.2s cubic-bezier(0.32, 0.04, 0.25, 1) forwards;
+    }
+
+    @keyframes truckDriveAcross {
+      0% { transform: translateX(-115vw) scale(0.95); }
+      38% { transform: translateX(-10px) scale(1); }
+      64% { transform: translateX(25px) scale(1); }
+      100% { transform: translateX(115vw) scale(0.95); }
+    }
+
+    .ts {
+      position: relative;
+      width: 400px;
+      left: 15px;
+      top: 75px;
+      animation: truckBounce 0.45s infinite alternate ease-in-out;
+    }
+
+    @keyframes truckBounce {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(7px); }
+    }
+
+    .box {
+      height: 150px;
+      width: 250px;
+      background: linear-gradient(145deg, #ffc2d1 0%, #ffacc2 100%);
+      position: relative;
+      border-radius: 10px 10px 0 0;
+      border: 2px solid #e27894;
+      box-shadow: 0 8px 20px rgba(184, 59, 94, 0.16);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .front {
+      position: absolute;
+      height: 20px;
+      width: 80px;
+      background-color: #ffb3c6;
+      right: 66px;
+      top: 30px;
+      border-radius: 5px 25px 0 0;
+      border-top: 2px solid #e27894;
+    }
+
+    .front1 {
+      position: absolute;
+      height: 60px;
+      width: 95px;
+      background-color: #ffb3c6;
+      right: -15px;
+      top: 14px;
+      border-radius: 2px 35px 0 0;
+      border-right: 2px solid #e27894;
+    }
+
+    .front2 {
+      position: absolute;
+      height: 60px;
+      width: 120px;
+      background-color: #ffacc2;
+      right: -40px;
+      top: 60px;
+      border-radius: 2px 12px 0 0;
+      border-right: 2px solid #e27894;
+    }
+
+    .hood {
+      width: 382px;
+      background-color: #2b181e;
+      height: 13px;
+      position: absolute;
+      left: -252px;
+      top: 120px;
+      border-radius: 4px 15px 4px 4px;
+    }
+
+    .window {
+      position: absolute;
+      background: linear-gradient(135deg, #6d3b6e 0%, #9b5d9c 100%);
+      height: 36px;
+      width: 65px;
+      left: 13px;
+      top: 22px;
+      border-radius: 5px 30px 4px 4px;
+      border: 2px solid #2b181e;
+    }
+
+    .tyre1, .tyre2, .tyre3, .tyre4 {
+      position: absolute;
+      height: 55px;
+      width: 55px;
+      background-color: #1c1215;
+      border-radius: 50%;
+      border: 3px solid #d44f65;
+      bottom: -40px;
+      animation: wheelSpin 0.8s infinite linear;
+      z-index: 5;
+    }
+
+    @keyframes wheelSpin {
+      100% { transform: rotate(360deg); }
+    }
+
+    .tyre1 { left: 5px; }
+    .tyre2 { left: 70px; }
+    .tyre3 { left: 180px; }
+    .tyre4 { left: 310px; }
+
+    .tyre1::after, .tyre2::after, .tyre3::after, .tyre4::after {
+      content: "";
+      position: absolute;
+      background-color: #6b6466;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      left: 6px;
+      top: 6px;
+    }
+
+    .r1, .r2, .r3, .r4 {
+      height: 21px;
+      width: 3px;
+      background-color: #1c1215;
+      z-index: 2;
+      position: absolute;
+    }
+    .r1 { transform: rotate(90deg); left: 36px; top: 9px; }
+    .r2 { transform: rotate(180deg); left: 36px; top: 20px; }
+    .r3 { transform: rotate(270deg); left: 26px; top: 27px; }
+    .r4 { transform: rotate(360deg); left: 15px; top: 20px; }
+
+    .light {
+      height: 20px;
+      width: 125px;
+      background-color: #584949;
+      position: absolute;
+      top: 90px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .trapezoid {
+      position: absolute;
+      width: 16px;
+      height: 95px;
+      background: linear-gradient(to bottom, rgba(255, 224, 130, 0.85), rgba(255, 92, 119, 0.35));
+      transform: perspective(10px) rotateX(7deg);
+      rotate: 270deg;
+      margin: 50px;
+      left: 95px;
+      top: -2px;
+      border-radius: 4px;
+    }
+
+    .pipe {
+      position: absolute;
+      height: 60px;
+      width: 8px;
+      background-color: #2b181e;
+      top: -50px;
+      z-index: -1;
+      border-radius: 0 50px 0 0;
+    }
+
+    .pipe2 {
+      position: absolute;
+      height: 20px;
+      width: 8px;
+      background-color: #2b181e;
+      top: -56px;
+      z-index: -1;
+      border-radius: 50px 0 0 50px;
+      rotate: 90deg;
+      left: -8px;
+    }
+
+    .smoke-puff {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(248,200,212,0.55) 60%, transparent 100%);
+      animation: puffFloat 1.4s ease-out infinite;
+      pointer-events: none;
+    }
+    .sp1 { width: 28px; height: 28px; left: -35px; top: -68px; animation-delay: 0s; }
+    .sp2 { width: 38px; height: 38px; left: -65px; top: -82px; animation-delay: 0.25s; }
+    .sp3 { width: 46px; height: 46px; left: -102px; top: -92px; animation-delay: 0.5s; }
+    .sp4 { width: 34px; height: 34px; left: -138px; top: -78px; animation-delay: 0.75s; }
+    .sp5 { width: 52px; height: 52px; left: -175px; top: -96px; animation-delay: 1s; }
+
+    @keyframes puffFloat {
+      0% { transform: translate(0, 0) scale(0.5); opacity: 0.9; }
+      100% { transform: translate(-45px, -18px) scale(1.35); opacity: 0; }
+    }
+
+    /* ================= STAGE 2: ANIMATION VIDEO ("Có những bức thư từ 10a1 nè") ================= */
+    .video-intro-stage {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      padding: 1.5rem;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .video-intro-stage.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .petal-orbit-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .ripple-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px solid rgba(216, 130, 148, 0.35);
+      width: 110px;
+      height: 110px;
+      animation: rippleOut 2.8s ease-out infinite;
+    }
+    .ripple-ring.delay-1 {
+      animation-delay: 1.1s;
+    }
+
+    @keyframes rippleOut {
+      0% { transform: scale(0.5); opacity: 0.9; }
+      100% { transform: scale(1.75); opacity: 0; }
+    }
+
+    .swirl-petal {
+      position: absolute;
+      width: 34px;
+      height: 52px;
+      border-radius: 50% 50% 45% 45%;
+      background: linear-gradient(180deg, #fff9fa 0%, #f6c8d1 65%, #d98296 100%);
+      box-shadow: 0 2px 6px rgba(158, 42, 71, 0.15);
+      transform-origin: center 42px;
+      opacity: 0;
+    }
+
+    .video-intro-stage.active-anim .swirl-petal {
+      animation: petalAssemble 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    @keyframes petalAssemble {
+      0% {
+        opacity: 0;
+        transform: rotate(var(--rot)) translateY(-130px) rotate(-140deg) scale(0.6);
+      }
+      55% { opacity: 0.95; }
+      100% {
+        opacity: 1;
+        transform: rotate(var(--rot)) translateY(-24px) rotate(0deg) scale(1);
+      }
+    }
+
+    .flower-pistil {
+      position: relative;
+      z-index: 10;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #4a1e27 0%, #7d3242 60%, #c9697e 100%);
+      box-shadow: 0 0 0 4px rgba(255, 240, 243, 0.7);
+      transform: scale(0);
+    }
+
+    .video-intro-stage.active-anim .flower-pistil {
+      animation: pistilPop 0.6s ease 1.1s forwards;
+    }
+
+    @keyframes pistilPop {
+      0% { transform: scale(0); }
+      70% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .title-reveal-box {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    .video-intro-stage.active-anim .title-reveal-box {
+      animation: fadeSlideUp 1s ease 1.35s forwards;
+    }
+
+    .subtitle-reveal-box {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+
+    .video-intro-stage.active-anim .subtitle-reveal-box {
+      animation: fadeSlideUp 0.9s ease 2.1s forwards;
+    }
+
+    @keyframes fadeSlideUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ================= STAGE 3: PHONG BÌ "THƯ ĐÂY NÈ" & NÚT "MỞ THƯ" ================= */
+    .envelope-stage {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      padding: 1.5rem;
+      transition: opacity 0.7s ease, visibility 0.7s ease;
+    }
+
+    .envelope-stage.hidden-stage {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .video-envelope-wrap {
+      position: relative;
+      width: 340px;
+      height: 225px;
+      margin: 1.25rem auto 1.75rem;
+      cursor: pointer;
+      perspective: 900px;
+      transition: transform 0.35s ease;
+    }
+
+    .video-envelope-wrap:hover {
+      transform: translateY(-5px) scale(1.02);
+    }
+
+    .video-env-body {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, #f99bb5 0%, #f582a2 100%);
+      border-radius: 10px;
+      box-shadow: 0 18px 36px rgba(168, 56, 88, 0.25), 0 4px 10px rgba(168, 56, 88, 0.15);
+      overflow: hidden;
+      border: 2px solid #fbaec3;
+    }
+
+    .video-env-letter-preview {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 12px;
+      height: 185px;
+      background: #fffafa;
+      border-radius: 8px;
+      border: 1.5px solid #f5c2cf;
+      padding: 16px;
+      text-align: center;
+      z-index: 2;
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .video-envelope-wrap.opening .video-env-letter-preview,
+    .video-envelope-wrap:hover .video-env-letter-preview {
+      transform: translateY(-32px);
+    }
+
+    .video-env-pocket {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .video-env-pocket::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, #f78ca9 0%, #f37698 100%);
+      clip-path: polygon(0 0, 52% 55%, 0 100%);
+    }
+
+    .video-env-pocket::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(225deg, #f78ca9 0%, #f37698 100%);
+      clip-path: polygon(100% 0, 48% 55%, 100% 100%);
+    }
+
+    .video-env-bottom-fold {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      background: linear-gradient(0deg, #fa9eb7 0%, #f686a5 100%);
+      clip-path: polygon(0 100%, 50% 48%, 100% 100%);
+      border-bottom: 4px solid #ffffff;
+    }
+
+    .video-env-flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 135px;
+      z-index: 5;
+      background: linear-gradient(180deg, #fbaac0 0%, #f581a0 100%);
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      transform-origin: top center;
+      transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+      filter: drop-shadow(0 5px 6px rgba(138, 35, 64, 0.18));
+    }
+
+    .video-envelope-wrap.opening .video-env-flap {
+      transform: rotateX(180deg);
+      z-index: 1;
+    }
+
+    .wax-seal {
+      position: absolute;
+      left: 50%;
+      top: 56%;
+      transform: translate(-50%, -50%);
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #f25c7e 0%, #d9385e 85%, #b82547 100%);
+      border: 2.5px dashed rgba(255, 225, 232, 0.85);
+      box-shadow: 0 4px 12px rgba(145, 28, 58, 0.32);
+      z-index: 6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.45s ease, opacity 0.45s ease;
+    }
+
+    .video-envelope-wrap.opening .wax-seal {
+      transform: translate(-50%, -50%) scale(1.25) rotate(25deg);
+      opacity: 0;
+    }
+
+    .open-letter-btn {
+      position: relative;
+      background: linear-gradient(180deg, #f77897 0%, #ec5378 100%);
+      color: #ffffff;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 0.75rem 2.75rem;
+      border-radius: 9999px;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 8px 22px rgba(236, 83, 120, 0.38), inset 0 1px 2px rgba(255,255,255,0.6);
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      animation: btnPulse 1.8s infinite;
+    }
+
+    .open-letter-btn:hover {
+      transform: scale(1.06) translateY(-2px);
+      background: linear-gradient(180deg, #ff85a3 0%, #f25c80 100%);
+      box-shadow: 0 12px 26px rgba(236, 83, 120, 0.5);
+    }
+
+    @keyframes btnPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(244, 107, 138, 0.55), 0 8px 22px rgba(236, 83, 120, 0.38); }
+      50% { box-shadow: 0 0 0 12px rgba(244, 107, 138, 0), 0 8px 22px rgba(236, 83, 120, 0.38); }
+    }
+
+    /* ================= STAGE 4: TRANG 41 TẤM THIỆP LỚP 10A1 ================= */
+    .gallery-stage {
+      position: relative;
+      z-index: 15;
+      min-height: 100vh;
+      padding-top: 2.5rem;
+      padding-bottom: 4rem;
+      transition: opacity 0.6s ease;
+    }
+
+    .gallery-stage.hidden-stage {
+      display: none;
+    }
+
+    .card-thumb-wrap {
+      perspective: 1000px;
+      cursor: pointer;
+    }
+
+    .card-thumb-book {
+      position: relative;
+      aspect-ratio: 210 / 297;
+      border-radius: 6px 10px 10px 6px;
+      box-shadow:
+        6px 6px 18px rgba(120, 40, 62, 0.22),
+        2px 0 0 #fff,
+        4px 0 0 #e5d5da,
+        6px 0 0 #fff;
+      transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+      transform-style: preserve-3d;
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .card-thumb-wrap:hover .card-thumb-book {
+      transform: translateY(-6px) rotateY(-8deg);
+      box-shadow:
+        12px 14px 26px rgba(120, 40, 62, 0.28),
+        2px 0 0 #fff,
+        4px 0 0 #e5d5da,
+        6px 0 0 #fff;
+    }
+
+    /* ================= 3D FLIPBOOK NHƯ VIDEO (HEYZINE FLIPBOOK STYLE) ================= */
+    .flipbook-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(255, 252, 253, 0.96) 0%, rgba(252, 232, 237, 0.94) 52%, rgba(240, 195, 207, 0.95) 100%);
+      padding: 1rem;
+    }
+
+    .flipbook-overlay.hidden-modal {
+      display: none;
+    }
+
+    /* Khung sân khấu 3D Flipbook */
+    .flipbook-viewport {
+      position: relative;
+      width: 100%;
+      max-width: 920px;
+      height: min(76vh, 620px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      perspective: 2200px;
+    }
+
+    /* Khi đóng: cuốn sổ nằm giữa; khi mở (-180deg): dịch sang phải 50% chiều rộng 1 trang để 2 trang cân giữa màn hình */
+    .flipbook-3d-stage {
+      position: relative;
+      width: min(42vw, 390px);
+      aspect-ratio: 210 / 297;
+      max-height: min(72vh, 560px);
+      transform-style: preserve-3d;
+      transition: transform 0.95s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .flipbook-3d-stage.is-open {
+      transform: translateX(50%);
+    }
+
+    @media (max-width: 640px) {
+      .flipbook-3d-stage {
+        width: 44vw;
+      }
+    }
+
+    /* Trang bên phải cố định (Image 3 / Image 3k) */
+    .flipbook-right-static {
+      position: absolute;
+      inset: 0;
+      background: #ffffff;
+      border-radius: 0 8px 8px 0;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow:
+        0 18px 38px rgba(90, 30, 48, 0.22),
+        3px 0 0 #f4eef0,
+        6px 0 0 #e2d6da,
+        9px 0 0 #f9f5f6;
+    }
+
+    .flipbook-right-static img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+    }
+
+    /* Bóng đổ gáy sách trên trang phải */
+    .flipbook-right-static::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 26px;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0));
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    /* Tờ bìa lật 3D: Mặt trước là Bìa (Image 1 / 3k-2), Mặt sau là Trang trong trái (Image 2 / 3k-1) */
+    .flipbook-flipping-leaf {
+      position: absolute;
+      inset: 0;
+      transform-origin: left center;
+      transform-style: preserve-3d;
+      transition: transform 0.95s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.95s ease;
+      z-index: 5;
+      cursor: pointer;
+    }
+
+    .flipbook-3d-stage.is-open .flipbook-flipping-leaf {
+      transform: rotateY(-180deg);
+    }
+
+    .leaf-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    /* Mặt trước: Bìa (image1, image4, ..., image121) */
+    .leaf-front-cover {
+      border-radius: 4px 8px 8px 4px;
+      box-shadow: 0 16px 35px rgba(90, 30, 48, 0.24);
+    }
+
+    .leaf-front-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+    }
+
+    /* Mặt sau khi lật sang trái: Trang trong trái (image2, image5, ..., image122) */
+    .leaf-back-left {
+      transform: rotateY(180deg);
+      border-radius: 8px 0 0 8px;
+      box-shadow:
+        -12px 18px 36px rgba(90, 30, 48, 0.22),
+        -3px 0 0 #f4eef0,
+        -6px 0 0 #e2d6da;
+    }
+
+    .leaf-back-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      display: block;
+    }
+
+    /* Bóng đổ gáy sách bên phải của trang trái */
+    .leaf-back-left::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 24px;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+      pointer-events: none;
+    }
+
+    /* Confetti sparkles */
+    .sparkle-confetti {
+      position: fixed;
+      width: 9px;
+      height: 9px;
+      border-radius: 2px;
+      pointer-events: none;
+      z-index: 35;
+      animation: confettiFall 2.2s ease-out forwards;
+    }
+
+    @keyframes confettiFall {
+      0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 1; }
+      100% { transform: translate(var(--dx), var(--dy)) rotate(340deg) scale(0.3); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BACKGROUND TỰA NHƯ VIDEO -->
+  <div class="video-like-bg" aria-hidden="true">
+    <div class="speckle-layer"></div>
+
+    <!-- Cành lá & Hoa bên trái -->
+    <svg class="sway-left absolute left-0 top-0 h-full w-40 md:w-64 opacity-85" viewBox="0 0 260 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-10 40 Q70 90 125 170" stroke="#7c8c6e" stroke-width="2" fill="none"/>
+      <path d="M45 85 C75 65 95 95 60 110 C35 100 35 90 45 85 Z" fill="#8ea37e" opacity="0.8"/>
+      <path d="M85 125 C115 110 130 140 95 150 C75 142 75 132 85 125 Z" fill="#9cb08c" opacity="0.75"/>
+      <g transform="translate(62, 515)">
+        <circle cx="0" cy="-14" r="9" fill="#fae3e7"/>
+        <circle cx="13" cy="-5" r="9" fill="#f7d4da"/>
+        <circle cx="8" cy="11" r="9" fill="#fae3e7"/>
+        <circle cx="-8" cy="11" r="9" fill="#f7d4da"/>
+        <circle cx="-13" cy="-5" r="9" fill="#fae3e7"/>
+        <circle cx="0" cy="0" r="6" fill="#6e2b3a"/>
+      </g>
+      <path d="M10 810 Q45 650 78 550" stroke="#c77d8f" stroke-width="2" fill="none"/>
+      <ellipse cx="78" cy="548" rx="9" ry="26" transform="rotate(14 78 548)" fill="#e391a6" opacity="0.85"/>
+      <ellipse cx="64" cy="590" rx="8" ry="22" transform="rotate(12 64 590)" fill="#ea9eb2" opacity="0.8"/>
+      <path d="M35 810 Q75 670 118 575" stroke="#c77d8f" stroke-width="1.8" fill="none"/>
+      <ellipse cx="118" cy="575" rx="10" ry="28" transform="rotate(18 118 575)" fill="#de839b" opacity="0.85"/>
+      <ellipse cx="102" cy="618" rx="8" ry="22" transform="rotate(18 102 618)" fill="#ea9eb2" opacity="0.75"/>
+    </svg>
+
+    <!-- Cành lá & Hoa bên phải -->
+    <svg class="sway-right absolute right-0 top-0 h-full w-40 md:w-64 opacity-85" viewBox="0 0 260 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M270 25 Q185 95 140 190" stroke="#7c8c6e" stroke-width="2" fill="none"/>
+      <path d="M205 85 C175 65 160 95 190 112 C210 102 212 92 205 85 Z" fill="#8ea37e" opacity="0.85"/>
+      <path d="M168 138 C140 125 130 152 160 165 C175 155 175 145 168 138 Z" fill="#a3b893" opacity="0.8"/>
+      <g transform="translate(185, 390)">
+        <circle cx="0" cy="-18" r="11" fill="#fff5f7"/>
+        <circle cx="16" cy="-6" r="11" fill="#f9dce2"/>
+        <circle cx="10" cy="14" r="11" fill="#fff5f7"/>
+        <circle cx="-10" cy="14" r="11" fill="#f9dce2"/>
+        <circle cx="-16" cy="-6" r="11" fill="#fff5f7"/>
+        <circle cx="0" cy="0" r="7" fill="#5e2230"/>
+      </g>
+      <path d="M250 810 Q215 650 182 545" stroke="#c77d8f" stroke-width="2" fill="none"/>
+      <ellipse cx="182" cy="545" rx="10" ry="27" transform="rotate(-14 182 545)" fill="#e391a6" opacity="0.85"/>
+      <ellipse cx="196" cy="590" rx="8" ry="22" transform="rotate(-12 196 590)" fill="#ea9eb2" opacity="0.8"/>
+      <path d="M220 810 Q185 685 148 595" stroke="#c77d8f" stroke-width="1.8" fill="none"/>
+      <ellipse cx="148" cy="595" rx="9" ry="25" transform="rotate(-18 148 595)" fill="#de839b" opacity="0.85"/>
+    </svg>
+  </div>
+
+  <!-- ================= STAGE 1: XE TẢI CHẠY QUA ================= -->
+  <section id="stage1Truck" class="truck-stage-wrapper">
+    <div class="truck-container">
+      <div id="truckRunner" class="truck-Runner">
+        <div class="ts">
+          <div class="box"></div>
+          <div class="front">
+            <div class="light"></div>
+            <div class="trapezoid"></div>
+            <div class="pipe"></div>
+            <div class="pipe2"></div>
+            <div class="smoke-puff sp1"></div>
+            <div class="smoke-puff sp2"></div>
+            <div class="smoke-puff sp3"></div>
+            <div class="smoke-puff sp4"></div>
+            <div class="smoke-puff sp5"></div>
+            <div class="front1"></div>
+            <div class="front2"></div>
+            <div class="window"></div>
+            <div class="hood"></div>
+          </div>
+          <div class="tyre1"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre2"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre3"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+          <div class="tyre4"><div class="r1"></div><div class="r2"></div><div class="r3"></div><div class="r4"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 2: ANIMATION CỦA VIDEO ("Có những bức thư từ 10a1 nè") ================= -->
+  <section id="stage2VideoIntro" class="video-intro-stage hidden-stage">
+    <div class="petal-orbit-container">
+      <div class="ripple-ring"></div>
+      <div class="ripple-ring delay-1"></div>
+      <div class="swirl-petal" style="--rot: 0deg;"></div>
+      <div class="swirl-petal" style="--rot: 45deg;"></div>
+      <div class="swirl-petal" style="--rot: 90deg;"></div>
+      <div class="swirl-petal" style="--rot: 135deg;"></div>
+      <div class="swirl-petal" style="--rot: 180deg;"></div>
+      <div class="swirl-petal" style="--rot: 225deg;"></div>
+      <div class="swirl-petal" style="--rot: 270deg;"></div>
+      <div class="swirl-petal" style="--rot: 315deg;"></div>
+      <div class="flower-pistil"></div>
+    </div>
+
+    <div class="title-reveal-box text-center max-w-2xl px-4">
+      <h1 class="font-calligraphy text-5xl sm:text-6xl md:text-7xl text-[#9e2a47] leading-tight drop-shadow-sm">
+        Có những bức thư từ 10a1 nè
+      </h1>
+
+      <div class="flex items-center justify-center gap-2 my-3 text-[#d98296]">
+        <span class="h-px w-16 sm:w-24 bg-[#d98296]"></span>
+        <span class="text-xs">◆</span>
+        <span class="text-base">❖</span>
+        <span class="text-xs">◆</span>
+        <span class="h-px w-16 sm:w-24 bg-[#d98296]"></span>
+      </div>
+    </div>
+
+    <div class="subtitle-reveal-box text-center">
+      <p class="font-serif-vn text-2xl sm:text-3xl font-bold text-[#6e3b47] tracking-wide">
+        Gửi đến thầy cô
+      </p>
+      <p class="font-serif-vn italic text-base sm:text-lg text-[#b56579] mt-1.5">
+        nhân ngày Nhà giáo Việt Nam 20/11
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 3: PHONG BÌ "THƯ ĐÂY NÈ" & NÚT "MỞ THƯ" ================= -->
+  <section id="stage3Envelope" class="envelope-stage hidden-stage">
+    <div class="text-center mb-1">
+      <h2 class="font-calligraphy text-5xl sm:text-6xl text-[#9e2a47] drop-shadow-sm">
+        Thư đây nè
+      </h2>
+    </div>
+
+    <div id="interactiveEnvelope" class="video-envelope-wrap" onclick="triggerOpenLettersPage()">
+      <div class="video-env-flap"></div>
+      <div class="video-env-body">
+        <div class="video-env-letter-preview">
+          <p class="font-script text-2xl text-rose-700 font-bold">Lớp 10A1 kính gửi Thầy Cô 💖</p>
+        </div>
+        <div class="video-env-pocket"></div>
+        <div class="video-env-bottom-fold"></div>
+      </div>
+      <div class="wax-seal">
+        <svg class="w-8 h-8" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="16" r="8" fill="#fff0f3"/>
+          <circle cx="46" cy="24" r="8" fill="#ffd9e1"/>
+          <circle cx="42" cy="41" r="8" fill="#fff0f3"/>
+          <circle cx="22" cy="41" r="8" fill="#ffd9e1"/>
+          <circle cx="18" cy="24" r="8" fill="#fff0f3"/>
+          <circle cx="32" cy="30" r="6" fill="#6b1d2f"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <button id="btnOpenLetterMain" onclick="triggerOpenLettersPage()" class="open-letter-btn">
+        MỞ THƯ
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= STAGE 4: TRANG 41 TẤM THIỆP CỦA LỚP 10A1 ================= -->
+  <main id="stage4Gallery" class="gallery-stage hidden-stage max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8">
+      <h1 class="font-calligraphy text-5xl sm:text-6xl text-[#9e2a47] drop-shadow-sm">
+        Những bức thư từ 10a1 nè
+      </h1>
+    </div>
+
+    <div id="lettersGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8"></div>
+  </main>
+
+  <!-- ================= TRÌNH LẬT SÁCH 3D FLIPBOOK NHƯ VIDEO (1 BÌA + 2 TRANG TRONG) ================= -->
+  <div id="flipbookModal" class="flipbook-overlay hidden-modal">
+    <!-- Cụm nút góc trên phải giống video Flipbook -->
+    <div class="fixed top-4 right-4 z-50 flex items-center gap-2 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-md border border-pink-200">
+      <span id="flipbookCardLabel" class="text-xs sm:text-sm font-bold text-rose-800 px-2">
+        Thiệp #01 / 41
+      </span>
+      <button onclick="toggleFlipState()" class="px-3 py-1 rounded-lg bg-rose-600 hover:bg-rose-700 text-white text-xs font-semibold transition" id="btnFlipToggle">
+        Lật mở thiệp
+      </button>
+      <button onclick="closeFlipbookModal()" class="w-8 h-8 rounded-lg bg-rose-100 hover:bg-rose-200 text-rose-900 font-bold flex items-center justify-center transition" title="Đóng">
+        ✕
+      </button>
+    </div>
+
+    <!-- Nút chuyển giữa các tấm thiệp hoặc lật trang -->
+    <button onclick="handleLeftArrow()" class="fixed left-3 sm:left-6 top-1/2 -translate-y-1/2 z-50 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/85 hover:bg-white text-rose-800 shadow-lg border border-pink-200 flex items-center justify-center text-xl font-bold transition" title="Đóng bìa / Thiệp trước">
+      ‹
+    </button>
+
+    <button onclick="handleRightArrow()" class="fixed right-3 sm:right-6 top-1/2 -translate-y-1/2 z-50 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/85 hover:bg-white text-rose-800 shadow-lg border border-pink-200 flex items-center justify-center text-xl font-bold transition" title="Mở lời chúc / Thiệp tiếp theo">
+      ›
+    </button>
+
+    <!-- Sân khấu 3D Flipbook tái hiện y hệt video -->
+    <div class="flipbook-viewport">
+      <div id="flipbookStage" class="flipbook-3d-stage">
+        <!-- Trang trong bên phải (image3, image6, ..., image123) -->
+        <div class="flipbook-right-static" onclick="toggleFlipState()">
+          <img id="fbRightImg" src="" alt="Trang lời chúc phải">
+        </div>
+
+        <!-- Tờ bìa lật 3D: Mặt trước là Bìa (image1, image4...), Mặt sau là Trang trong bên trái (image2, image5...) -->
+        <div class="flipbook-flipping-leaf" onclick="toggleFlipState()">
+          <div class="leaf-face leaf-front-cover">
+            <img id="fbCoverImg" src="" alt="Bìa tấm thiệp">
+          </div>
+          <div class="leaf-face leaf-back-left">
+            <img id="fbLeftImg" src="" alt="Trang lời chúc trái">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanh chuyển nhanh giữa 41 tấm thiệp ở dưới đáy -->
+    <div class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md border border-pink-200 text-xs sm:text-sm">
+      <button onclick="changeCard(-1)" class="font-semibold text-rose-700 hover:text-rose-900 transition">
+        ← Thiệp trước
+      </button>
+      <span class="text-pink-300">|</span>
+      <span id="fbImageIndicesInfo" class="font-mono text-xs text-rose-800">
+        Bìa: image1 • Trang trong: image2 &amp; image3
+      </span>
+      <span class="text-pink-300">|</span>
+      <button onclick="changeCard(1)" class="font-semibold text-rose-700 hover:text-rose-900 transition">
+        Thiệp tiếp theo →
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // 3 hình ảnh mẫu người dùng cung cấp:
+    // - Hình 3 từ trái sang (Bìa): 1794505110400_..._e45f6fe025879ca4eff1ece95591ad3c.jpg
+    // - 2 hình ảnh trang trong (Lời chúc): 1794505110422_..._e72f0eaaada8bca74c248ac087e7fa95.jpg & 1794505110363_..._315c39a6bf5b52b9af0017ab0d823805.jpg
+    var SAMPLE_COVER_SRC = "user_uploaded_files/ttl=63d/user_uploaded/1794505110400_1989479405086309678_1989479405086309678_e45f6fe025879ca4eff1ece95591ad3c.jpg";
+    var SAMPLE_LEFT_SRC  = "user_uploaded_files/ttl=63d/user_uploaded/1794505110422_1989479405086309678_1989479405086309678_e72f0eaaada8bca74c248ac087e7fa95.jpg";
+    var SAMPLE_RIGHT_SRC = "user_uploaded_files/ttl=63d/user_uploaded/1794505110363_1989479405086309678_1989479405086309678_315c39a6bf5b52b9af0017ab0d823805.jpg";
+
+    function pad2(n) {
+      return n < 10 ? "0" + n : "" + n;
+    }
+
+    // Khởi tạo danh sách 41 tấm thiệp của lớp 10A1:
+    // Thiệp 1: Bìa = image1, 2 trang trong = image2 & image3
+    // Thiệp 2: Bìa = image4, 2 trang trong = image5 & image6
+    // ...
+    // Thiệp k (1..41): Bìa = image(3k-2), 2 trang trong = image(3k-1) & image(3k)
+    var CARDS_DATA = [];
+    for (var cardIdx = 1; cardIdx <= 41; cardIdx++) {
+      var imgCoverNum = (cardIdx - 1) * 3 + 1;
+      var imgLeftNum  = (cardIdx - 1) * 3 + 2;
+      var imgRightNum = (cardIdx - 1) * 3 + 3;
+
+      CARDS_DATA.push({
+        cardNumber: cardIdx,
+        numStr: pad2(cardIdx),
+        coverIdx: imgCoverNum,
+        leftIdx: imgLeftNum,
+        rightIdx: imgRightNum,
+        coverPath: "image/image" + imgCoverNum + ".jpg",
+        leftPath: "image/image" + imgLeftNum + ".jpg",
+        rightPath: "image/image" + imgRightNum + ".jpg",
+        coverSrc: "image/image" + imgCoverNum + ".jpg",
+        leftSrc: "image/image" + imgLeftNum + ".jpg",
+        rightSrc: "image/image" + imgRightNum + ".jpg"
+      });
+    }
+
+    var currentStage = 1;
+    var stageTimers = [];
+    var activeCardIndex = 0;
+    var isBookOpen = false;
+
+    function clearStageTimers() {
+      for (var i = 0; i < stageTimers.length; i++) {
+        clearTimeout(stageTimers[i]);
+      }
+      stageTimers = [];
+    }
+
+    function spawnConfettiBurst() {
+      var colors = ["#f46b8a", "#fca5bb", "#d9385e", "#ffccd7", "#eab308"];
+      for (var i = 0; i < 36; i++) {
+        var dot = document.createElement("div");
+        dot.className = "sparkle-confetti";
+        dot.style.left = (20 + Math.random() * 60) + "vw";
+        dot.style.top = (20 + Math.random() * 45) + "vh";
+        dot.style.backgroundColor = colors[i % colors.length];
+        var dx = (Math.random() - 0.5) * 260 + "px";
+        var dy = (60 + Math.random() * 200) + "px";
+        dot.style.setProperty("--dx", dx);
+        dot.style.setProperty("--dy", dy);
+        document.body.appendChild(dot);
+        setTimeout((function(el) {
+          return function() {
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+          };
+        })(dot), 2300);
+      }
+    }
+
+    window.goToStage = function(stageNum) {
+      clearStageTimers();
+      currentStage = stageNum;
+
+      var s1 = document.getElementById("stage1Truck");
+      var s2 = document.getElementById("stage2VideoIntro");
+      var s3 = document.getElementById("stage3Envelope");
+      var s4 = document.getElementById("stage4Gallery");
+      var env = document.getElementById("interactiveEnvelope");
+
+      s1.classList.add("hidden-stage");
+      s2.classList.add("hidden-stage");
+      s2.classList.remove("active-anim");
+      s3.classList.add("hidden-stage");
+      s4.classList.add("hidden-stage");
+      if (env) env.classList.remove("opening");
+
+      if (stageNum === 1) {
+        s1.classList.remove("hidden-stage");
+        var runner = document.getElementById("truckRunner");
+        if (runner) {
+          runner.style.animation = "none";
+          void runner.offsetHeight;
+          runner.style.animation = "";
+        }
+        stageTimers.push(setTimeout(function() {
+          if (currentStage === 1) window.goToStage(2);
+        }, 5000));
+      } else if (stageNum === 2) {
+        s2.classList.remove("hidden-stage");
+        void s2.offsetHeight;
+        s2.classList.add("active-anim");
+        stageTimers.push(setTimeout(function() {
+          if (currentStage === 2) window.goToStage(3);
+        }, 4400));
+      } else if (stageNum === 3) {
+        spawnConfettiBurst();
+        s3.classList.remove("hidden-stage");
+      } else if (stageNum === 4) {
+        s4.classList.remove("hidden-stage");
+        renderCardsGrid();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    window.triggerOpenLettersPage = function() {
+      var env = document.getElementById("interactiveEnvelope");
+      if (env) env.classList.add("opening");
+      spawnConfettiBurst();
+      setTimeout(function() {
+        window.goToStage(4);
+      }, 700);
+    };
+
+    // Xử lý tự động thử đuôi .png hoặc có dấu cách nếu người dùng đặt tên image1.png hoặc image 1.jpg
+    window.handleImgError = function(imgEl, imgNum) {
+      var step = parseInt(imgEl.getAttribute("data-fallback-step") || "0", 10);
+      if (step === 0) {
+        imgEl.setAttribute("data-fallback-step", "1");
+        imgEl.src = "image/image" + imgNum + ".png";
+      } else if (step === 1) {
+        imgEl.setAttribute("data-fallback-step", "2");
+        imgEl.src = "image/image " + imgNum + ".jpg";
+      } else if (step === 2) {
+        imgEl.setAttribute("data-fallback-step", "3");
+        imgEl.src = "image/image " + imgNum + ".png";
+      }
+    };
+
+    function renderCardsGrid() {
+      var grid = document.getElementById("lettersGrid");
+      var html = "";
+      for (var i = 0; i < CARDS_DATA.length; i++) {
+        var c = CARDS_DATA[i];
+        html +=
+          '<div onclick="openFlipbookModal(' + i + ')" class="card-thumb-wrap flex flex-col items-center group">' +
+            '<div class="card-thumb-book w-full">' +
+              '<img src="' + c.coverSrc + '" onerror="handleImgError(this, ' + c.coverIdx + ')" alt="Thiệp #' + c.numStr + ' (image' + c.coverIdx + ')" class="w-full h-full object-fill">' +
+            '</div>' +
+            '<div class="mt-2.5 text-center">' +
+              '<span class="inline-block px-3 py-0.5 rounded-full bg-white/85 border border-pink-200 text-rose-900 font-semibold text-xs sm:text-sm shadow-sm group-hover:bg-rose-600 group-hover:text-white transition">' +
+                'Thiệp #' + c.numStr +
+              '</span>' +
+            '</div>' +
+          '</div>';
+      }
+      grid.innerHTML = html;
+    }
+
+    window.openFlipbookModal = function(index) {
+      activeCardIndex = index;
+      isBookOpen = false;
+      var modal = document.getElementById("flipbookModal");
+      modal.classList.remove("hidden-modal");
+      syncFlipbookContent();
+
+      // Tự động lật mở tấm thiệp mượt mà như trong video sau 0.45s
+      setTimeout(function() {
+        if (!modal.classList.contains("hidden-modal")) {
+          isBookOpen = true;
+          updateFlipbookStageClass();
+        }
+      }, 450);
+    };
+
+    window.closeFlipbookModal = function() {
+      var modal = document.getElementById("flipbookModal");
+      modal.classList.add("hidden-modal");
+    };
+
+    function syncFlipbookContent() {
+      var c = CARDS_DATA[activeCardIndex];
+      if (!c) return;
+
+      var coverImg = document.getElementById("fbCoverImg");
+      var leftImg  = document.getElementById("fbLeftImg");
+      var rightImg = document.getElementById("fbRightImg");
+
+      coverImg.removeAttribute("data-fallback-step");
+      leftImg.removeAttribute("data-fallback-step");
+      rightImg.removeAttribute("data-fallback-step");
+
+      coverImg.onerror = function() { window.handleImgError(coverImg, c.coverIdx); };
+      leftImg.onerror  = function() { window.handleImgError(leftImg, c.leftIdx); };
+      rightImg.onerror = function() { window.handleImgError(rightImg, c.rightIdx); };
+
+      coverImg.src = c.coverSrc;
+      leftImg.src  = c.leftSrc;
+      rightImg.src = c.rightSrc;
+
+      document.getElementById("flipbookCardLabel").textContent = "Thiệp #" + c.numStr + " / 41";
+      document.getElementById("fbImageIndicesInfo").textContent =
+        "Bìa: image" + c.coverIdx + " • Trang trong: image" + c.leftIdx + " & image" + c.rightIdx;
+
+      updateFlipbookStageClass();
+    }
+
+    function updateFlipbookStageClass() {
+      var stage = document.getElementById("flipbookStage");
+      var btn = document.getElementById("btnFlipToggle");
+      if (isBookOpen) {
+        stage.classList.add("is-open");
+        if (btn) btn.textContent = "Đóng bìa thiệp";
+      } else {
+        stage.classList.remove("is-open");
+        if (btn) btn.textContent = "Lật mở thiệp";
+      }
+    }
+
+    window.toggleFlipState = function() {
+      isBookOpen = !isBookOpen;
+      updateFlipbookStageClass();
+    };
+
+    window.handleRightArrow = function() {
+      if (!isBookOpen) {
+        isBookOpen = true;
+        updateFlipbookStageClass();
+      } else {
+        window.changeCard(1);
+      }
+    };
+
+    window.handleLeftArrow = function() {
+      if (isBookOpen) {
+        isBookOpen = false;
+        updateFlipbookStageClass();
+      } else {
+        window.changeCard(-1);
+      }
+    };
+
+    window.changeCard = function(delta) {
+      activeCardIndex = (activeCardIndex + delta + CARDS_DATA.length) % CARDS_DATA.length;
+      isBookOpen = false;
+      syncFlipbookContent();
+    };
+
+    document.addEventListener("keydown", function(e) {
+      var modal = document.getElementById("flipbookModal");
+      if (!modal || modal.classList.contains("hidden-modal")) return;
+      if (e.key === "ArrowRight") window.handleRightArrow();
+      if (e.key === "ArrowLeft") window.handleLeftArrow();
+      if (e.key === "Escape") window.closeFlipbookModal();
+    });
+
+    window.addEventListener("DOMContentLoaded", function() {
+      renderCardsGrid();
+      window.goToStage(1);
+    });
+  </script>
+</body>
+</html>
